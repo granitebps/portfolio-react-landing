@@ -4,6 +4,7 @@ import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import BlogsView from '../components/BlogsView';
 import Pagination from '../components/Pagination';
+import { Helmet } from 'react-helmet';
 
 function Blogs() {
   const [posts, setPosts] = useState([]);
@@ -27,6 +28,27 @@ function Blogs() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Granite Bagas - Blogs</title>
+        <meta name='description' content='Blogs Granite Bagas' />
+        <meta property='og:title' content='Blogs Page of Granite Bagas Site' />
+        <meta property='og:description' content='Blogs Granite Bagas' />
+        <meta
+          property='og:image'
+          content='http://api.granitebps.com/images/gbps.png'
+        />
+        <meta property='og:url' content='https://granitebps.com' />
+        <meta property='og:site_name' content='Granite Bagas' />
+        <meta name='twitter:title' content='Blogs Page of Granite Bagas Site' />
+        <meta name='twitter:description' content='Blogs Granite Bagas' />
+        <meta
+          name='twitter:image'
+          content='http://api.granitebps.com/images/gbps.png'
+        />
+        <meta name='twitter:site' content='@granitbps' />
+        <meta name='twitter:creator' content='@granitbps' />
+      </Helmet>
+
       <div className='mi-about mi-section mi-padding-top mi-padding-bottom'>
         <div className='container'>
           <Sectiontitle title='Recent Blogs' />
