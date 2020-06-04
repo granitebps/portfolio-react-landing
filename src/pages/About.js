@@ -85,16 +85,17 @@ function About() {
                     <b>Full Name</b> {dataProfile.data.name}
                   </li>
                   <li>
-                    <b>Age</b> 23 Years
+                    <b>Age</b> {dataProfile.data.profile.age} Years
                   </li>
                   <li>
                     <b>Phone</b> {dataProfile.data.profile.phone}
                   </li>
                   <li>
-                    <b>Nationality</b> Indonesia
+                    <b>Nationality</b> {dataProfile.data.profile.nationality}
                   </li>
                   <li>
-                    <b>Languages</b> Indonesia, English
+                    <b>Languages</b>{' '}
+                    {dataProfile.data.profile.languages.toString()}
                   </li>
                   <li>
                     <b>Email</b> {dataProfile.data.email}
@@ -103,7 +104,10 @@ function About() {
                     <b>Address</b> {dataProfile.data.profile.address}
                   </li>
                   <li>
-                    <b>Freelance</b> Available
+                    <b>Freelance</b>{' '}
+                    {dataProfile.data.profile.freelance === '1'
+                      ? 'Available'
+                      : 'Not Available'}
                   </li>
                 </ul>
                 <a href={dataProfile.data.profile.cv} className='mi-button'>
@@ -127,6 +131,21 @@ function About() {
                   <Service service={service} />
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='mi-review-area mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Reviews' />
+          <div className='row justify-content-center'>
+            <div className='col-12'>
+              <h3>Under Construction</h3>
+              {/* <Slider className="mi-testimonial-slider" {...sliderSettings}>
+                {reviews.map(review =>(
+                  <Testimonial key={review.id} content={review}/>
+                ))}
+              </Slider> */}
             </div>
           </div>
         </div>

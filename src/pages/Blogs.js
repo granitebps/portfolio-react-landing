@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import Sectiontitle from "../components/Sectiontitle";
-import Layout from "../components/Layout";
-import BlogsView from "../components/BlogsView";
-import Pagination from "../components/Pagination";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Sectiontitle from '../components/Sectiontitle';
+import Layout from '../components/Layout';
+import BlogsView from '../components/BlogsView';
+import Pagination from '../components/Pagination';
 
 function Blogs() {
   const [posts, setPosts] = useState([]);
@@ -11,7 +11,7 @@ function Blogs() {
   const [postsPerPage] = useState(6);
 
   useEffect(() => {
-    axios.get("/api/blog").then(response => {
+    axios.get('/api/blog').then((response) => {
       setPosts(response.data);
     });
   }, [posts]);
@@ -23,14 +23,15 @@ function Blogs() {
   const paginate = (e, pageNumber) => {
     e.preventDefault();
     setCurrentPage(pageNumber);
-  }
+  };
 
   return (
     <Layout>
-      <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Recent Blogs" />
-          <BlogsView blogs={currentPosts} />
+      <div className='mi-about mi-section mi-padding-top mi-padding-bottom'>
+        <div className='container'>
+          <Sectiontitle title='Recent Blogs' />
+          <h2>Under Construction</h2>
+          {/* <BlogsView blogs={currentPosts} />
           {!(posts.length > postsPerPage) ? null : (
             <Pagination
               className="mt-50"
@@ -39,7 +40,7 @@ function Blogs() {
               paginate={paginate}
               currentPage={currentPage}
             />
-          )}
+          )} */}
         </div>
       </div>
     </Layout>

@@ -4,7 +4,7 @@ import Sectiontitle from '../components/Sectiontitle';
 import Smalltitle from '../components/Smalltitle';
 import Layout from '../components/Layout';
 import Progress from '../components/Progress';
-import Resume from '../components/Resume';
+import { ResumeEducation, ResumeExperience } from '../components/Resume';
 import useAxios from '../utils/useAxios';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
@@ -26,12 +26,17 @@ function Resumes() {
   ] = useAxios('experience', {
     useCache: false,
   });
+  const [
+    { data: dataEducation, loading: loadingEducation, error: errorEducation },
+  ] = useAxios('education', {
+    useCache: false,
+  });
 
-  if (loadingSkill || loadingExperience) {
+  if (loadingSkill || loadingExperience || loadingEducation) {
     return <Loading />;
   }
 
-  if (errorSkill || errorExperience) {
+  if (errorSkill || errorExperience || errorEducation) {
     return <Error retry={refetchSkill} />;
   }
 
@@ -88,16 +93,16 @@ function Resumes() {
           <Smalltitle title='Working Experience' icon='briefcase' />
           <div className='mi-resume-wrapper'>
             {dataExperience.data.map((workingExp) => (
-              <Resume key={workingExp.id} resumeData={workingExp} />
+              <ResumeExperience key={workingExp.id} resumeData={workingExp} />
             ))}
           </div>
-          {/* <div className="mt-30"></div>
-          <Smalltitle title="Educational Qualifications" icon="book" />
-          <div className="mi-resume-wrapper">
-            {educationExperience.map(educatonExp => (
-              <Resume key={educatonExp.id} resumeData={educatonExp}/>
+          <div className='mt-30'></div>
+          <Smalltitle title='Educational Qualifications' icon='book' />
+          <div className='mi-resume-wrapper'>
+            {dataEducation.data.map((educatonExp) => (
+              <ResumeEducation key={educatonExp.id} resumeData={educatonExp} />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </Layout>
