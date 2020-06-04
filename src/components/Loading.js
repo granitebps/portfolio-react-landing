@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className='d-flex align-items-center min-vh-100'>
       <div className='container text-center'>
-        <Loader type='ThreeDots' color='#00BFFF' height={100} width={100} />
+        <Loader type='ThreeDots' color='#ff4d4d' height={100} width={100} />
       </div>
     </div>
   );

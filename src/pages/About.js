@@ -118,9 +118,9 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='mi-service-area mi-section mi-padding-top mi-padding-bottom'>
+      <div className='mi-service-area mi-section mi-padding-top'>
         <div className='container'>
-          <Sectiontitle title='Services' />
+          <Sectiontitle title='Services & Technologies' />
           <div className='mi-service-wrapper'>
             <div className='row mt-30-reverse'>
               {dataService.data.map((service) => (
