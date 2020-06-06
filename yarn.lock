@@ -8759,10 +8759,10 @@ react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-lineicons@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-1.0.0.tgz#4f199af92aa0cc7676b46bad343a585dce92efdc"
-  integrity sha512-OPnf/nojH51JlemS8AXNMd8hRwiWBIWSPA28ORUcGtY8tRiUrKDM+Szi26Sq5AhG5xxrB0xrzfS9wJddWYu58g==
+react-lineicons@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-2.2.0.tgz#1f773cffbce72dafd95ddc2956d9f70c6f08de0f"
+  integrity sha512-PYQpfDGlaSFkujh3gYsFGhWETUnZ9mbeNFYTptZZ0yKWQ5I3GsTPGzJHYmbZNHxek0py0GFxE7zoIAg1KKcQ8g==
   dependencies:
     prop-types "^15.7.2"
 
@@ -10946,9 +10946,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   version "1.0.5"
