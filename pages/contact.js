@@ -95,6 +95,7 @@ function Contact({ dataProfile }) {
         />
         <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
+        <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
           content="Contact Page of Granite Bagas Site"
@@ -106,6 +107,7 @@ function Contact({ dataProfile }) {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
+        <meta name="twitter:card" value="summary" />
       </Head>
 
       <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">

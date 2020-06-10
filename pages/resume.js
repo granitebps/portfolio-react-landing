@@ -26,6 +26,7 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
         />
         <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
+        <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
           content="Resumes Page of Granite Bagas Site"
@@ -37,6 +38,7 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
+        <meta name="twitter:card" value="summary" />
       </Head>
 
       <div className="mi-skills-area mi-section mi-padding-top">

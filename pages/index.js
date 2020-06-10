@@ -54,6 +54,7 @@ const index = ({ data }) => {
         />
         <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Home Page of Granite Bagas Site" />
         <meta name="twitter:description" content={data.data.profile.about} />
         <meta
@@ -62,6 +63,7 @@ const index = ({ data }) => {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
+        <meta name="twitter:card" value="summary" />
       </Head>
 
       <div className="mi-home-area mi-padding-section">

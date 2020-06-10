@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const Error404 = () => {
   const router = useRouter();
   const handleBack = () => {
-    router.back();
+    router.push('/');
   };
   return (
     <div className="d-flex align-items-center min-vh-100">
@@ -16,7 +16,7 @@ const Error404 = () => {
         />
         <h1 className="font-large-2 my-2">404 - Page Not Found!</h1>
         <button onClick={handleBack} className="btn btn-primary btn-lg">
-          Back
+          Home
         </button>
       </div>
     </div>

@@ -34,6 +34,7 @@ function blogs({ dataBlog, dataProfile }) {
         />
         <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Blogs Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Blogs Granite Bagas" />
         <meta
@@ -42,6 +43,7 @@ function blogs({ dataBlog, dataProfile }) {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
+        <meta name="twitter:card" value="summary" />
       </Head>
 
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">

@@ -27,11 +27,13 @@ function BlogDetails({ dataBlog, dataProfile }) {
         <meta property="og:image" content={dataBlog.data.image} />
         <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
+        <meta property="og:type" content="article" />
         <meta name="twitter:title" content={dataBlog.data.title} />
         <meta name="twitter:description" content={dataBlog.data.body} />
         <meta name="twitter:image" content={dataBlog.data.image} />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
+        <meta name="twitter:card" value="summary" />
       </Head>
 
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
