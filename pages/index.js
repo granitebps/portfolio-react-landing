@@ -52,7 +52,7 @@ const index = ({ data }) => {
           property="og:image"
           content="http://api.granitebps.com/images/gbps.png"
         />
-        <meta property="og:url" content="https://granitebps.com" />
+        <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Home Page of Granite Bagas Site" />
@@ -63,7 +63,7 @@ const index = ({ data }) => {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-        <meta name="twitter:card" value="summary" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <div className="mi-home-area mi-padding-section">

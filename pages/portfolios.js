@@ -37,7 +37,7 @@ function portfolio({ dataPortfolio, dataProfile }) {
           property="og:image"
           content="http://api.granitebps.com/images/gbps.png"
         />
-        <meta property="og:url" content="https://granitebps.com" />
+        <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta
@@ -51,7 +51,7 @@ function portfolio({ dataPortfolio, dataProfile }) {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-        <meta name="twitter:card" value="summary" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">

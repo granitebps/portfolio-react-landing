@@ -10,7 +10,7 @@ function BlogDetails({ dataBlog, dataProfile }) {
 
   const disqusShortname = 'granitebps-2'; //found in your Disqus.com dashboard
   const disqusConfig = {
-    url: `https://granitebps.com`, //Homepage link of this site.
+    url: `https://granitebps.site`, //Homepage link of this site.
     identifier: blogId.toString(),
     title: blogFile,
   };
@@ -25,7 +25,7 @@ function BlogDetails({ dataBlog, dataProfile }) {
         <meta property="og:title" content={dataBlog.data.title} />
         <meta property="og:description" content={dataBlog.data.body} />
         <meta property="og:image" content={dataBlog.data.image} />
-        <meta property="og:url" content="https://granitebps.com" />
+        <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="article" />
         <meta name="twitter:title" content={dataBlog.data.title} />
@@ -33,7 +33,7 @@ function BlogDetails({ dataBlog, dataProfile }) {
         <meta name="twitter:image" content={dataBlog.data.image} />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-        <meta name="twitter:card" value="summary" />
+        <meta name="twitter:card" content="summary" />
       </Head>
 
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
