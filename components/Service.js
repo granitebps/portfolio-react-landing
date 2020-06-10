@@ -1,5 +1,9 @@
 import React from 'react';
-import LineIcon from 'react-lineicons';
+import dynamic from 'next/dynamic';
+
+const LineIcon = dynamic(() => import('react-lineicons'), {
+  ssr: false,
+});
 
 const Service = ({ service }) => {
   return (

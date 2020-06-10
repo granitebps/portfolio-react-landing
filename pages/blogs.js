@@ -1,29 +1,14 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
-import Loading from '../components/Loading';
-import Error from '../components/Error';
 import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import BlogsView from '../components/BlogsView';
 import Pagination from '../components/Pagination';
-import useAxios from '../utils/useAxios';
 
-function Blogs() {
-  const [
-    { data: dataBlog, loading: loadingBlog, error: errorBlog },
-    refetchBlog,
-  ] = useAxios('blog', { useCache: false });
+function blogs({ dataBlog, dataProfile }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(6);
-
-  if (loadingBlog) {
-    return <Loading />;
-  }
-
-  if (errorBlog) {
-    return <Error retry={refetchBlog} />;
-  }
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -35,9 +20,11 @@ function Blogs() {
   };
 
   return (
-    <Layout>
-      <Helmet>
+    <Layout data={dataProfile.data}>
+      <Head>
         <title>Granite Bagas - Blogs</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Blogs Granite Bagas" />
         <meta property="og:title" content="Blogs Page of Granite Bagas Site" />
         <meta property="og:description" content="Blogs Granite Bagas" />
@@ -55,7 +42,7 @@ function Blogs() {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-      </Helmet>
+      </Head>
 
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
@@ -76,4 +63,18 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export async function getServerSideProps() {
+  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
+  const dataProfile = await resProfile.json();
+  const resBlog = await fetch(`https://api.granitebps.com/api/v1/blog`);
+  const dataBlog = await resBlog.json();
+
+  return {
+    props: {
+      dataProfile: dataProfile,
+      dataBlog: dataBlog,
+    },
+  };
+}
+
+export default blogs;

@@ -2,16 +2,10 @@ import React, { useState } from 'react';
 import * as Icon from 'react-feather';
 import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
-import useAxios, { baseAxios } from '../utils/useAxios';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import { Helmet } from 'react-helmet';
+import { baseAxios } from '../utils/useAxios';
+import Head from 'next/head';
 
-function Contact() {
-  const [
-    { data: dataProfile, loading: loadingProfile, error: errorProfile },
-    refetchProfile,
-  ] = useAxios('profile', { useCache: false });
+function Contact({ dataProfile }) {
   const [loading, setLoading] = useState(false);
   const [formdata, setFormdata] = useState({
     first_name: '',
@@ -75,135 +69,129 @@ function Contact() {
 
   const handleAlerts = () => {
     if (error && message) {
-      return <div className='alert alert-danger mt-4'>{message}</div>;
+      return <div className="alert alert-danger mt-4">{message}</div>;
     } else if (!error && message) {
-      return <div className='alert alert-success mt-4'>{message}</div>;
+      return <div className="alert alert-success mt-4">{message}</div>;
     } else {
       return null;
     }
   };
 
-  if (loadingProfile) {
-    return <Loading />;
-  }
-
-  if (errorProfile) {
-    return <Error retry={refetchProfile} />;
-  }
-
   return (
-    <Layout>
-      <Helmet>
+    <Layout data={dataProfile.data}>
+      <Head>
         <title>Granite Bagas - Contact</title>
-        <meta name='description' content='Contact Granite Bagas' />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Contact Granite Bagas" />
         <meta
-          property='og:title'
-          content='Contact Page of Granite Bagas Site'
+          property="og:title"
+          content="Contact Page of Granite Bagas Site"
         />
-        <meta property='og:description' content='Contact Granite Bagas' />
+        <meta property="og:description" content="Contact Granite Bagas" />
         <meta
-          property='og:image'
-          content='http://api.granitebps.com/images/gbps.png'
+          property="og:image"
+          content="http://api.granitebps.com/images/gbps.png"
         />
-        <meta property='og:url' content='https://granitebps.com' />
-        <meta property='og:site_name' content='Granite Bagas' />
+        <meta property="og:url" content="https://granitebps.com" />
+        <meta property="og:site_name" content="Granite Bagas" />
         <meta
-          name='twitter:title'
-          content='Contact Page of Granite Bagas Site'
+          name="twitter:title"
+          content="Contact Page of Granite Bagas Site"
         />
-        <meta name='twitter:description' content='Contact Granite Bagas' />
+        <meta name="twitter:description" content="Contact Granite Bagas" />
         <meta
-          name='twitter:image'
-          content='http://api.granitebps.com/images/gbps.png'
+          name="twitter:image"
+          content="http://api.granitebps.com/images/gbps.png"
         />
-        <meta name='twitter:site' content='@granitbps' />
-        <meta name='twitter:creator' content='@granitbps' />
-      </Helmet>
+        <meta name="twitter:site" content="@granitbps" />
+        <meta name="twitter:creator" content="@granitbps" />
+      </Head>
 
-      <div className='mi-contact-area mi-section mi-padding-top mi-padding-bottom'>
-        <div className='container'>
-          <Sectiontitle title='Contact Me' />
-          <div className='row'>
-            <div className='col-lg-6'>
-              <div className='mi-contact-formwrapper'>
+      <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
+        <div className="container">
+          <Sectiontitle title="Contact Me" />
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
                 <form
-                  action='#'
-                  className='mi-form mi-contact-form'
+                  action="#"
+                  className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
                 >
-                  <div className='mi-form-field'>
-                    <label htmlFor='contact-form-first-name'>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-first-name">
                       Enter your first name*
                     </label>
                     <input
                       onChange={handleChange}
-                      type='text'
-                      name='first_name'
-                      id='contact-form-first-name'
+                      type="text"
+                      name="first_name"
+                      id="contact-form-first-name"
                       value={formdata.first_name}
                     />
                   </div>
-                  <div className='mi-form-field'>
-                    <label htmlFor='contact-form-last-name'>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-last-name">
                       Enter your last name*
                     </label>
                     <input
                       onChange={handleChange}
-                      type='text'
-                      name='last_name'
-                      id='contact-form-last-name'
+                      type="text"
+                      name="last_name"
+                      id="contact-form-last-name"
                       value={formdata.last_name}
                     />
                   </div>
-                  <div className='mi-form-field'>
-                    <label htmlFor='contact-form-email'>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-email">
                       Enter your email*
                     </label>
                     <input
                       onChange={handleChange}
-                      type='email'
-                      name='email'
-                      id='contact-form-email'
+                      type="email"
+                      name="email"
+                      id="contact-form-email"
                       value={formdata.email}
                     />
                   </div>
-                  <div className='mi-form-field'>
-                    <label htmlFor='contact-form-phone'>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-phone">
                       Enter your phone*
                     </label>
                     <input
                       onChange={handleChange}
-                      type='number'
-                      name='phone'
-                      id='contact-form-phone'
+                      type="number"
+                      name="phone"
+                      id="contact-form-phone"
                       value={formdata.phone}
                     />
                   </div>
-                  <div className='mi-form-field'>
-                    <label htmlFor='contact-form-message'>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-message">
                       Enter your Message*
                     </label>
                     <textarea
                       onChange={handleChange}
-                      name='message'
-                      id='contact-form-message'
-                      cols='30'
-                      rows='6'
+                      name="message"
+                      id="contact-form-message"
+                      cols="30"
+                      rows="6"
                       value={formdata.message}
                     ></textarea>
                   </div>
-                  <div className='mi-form-field'>
+                  <div className="mi-form-field">
                     <button
-                      className='mi-button'
-                      type='submit'
+                      className="mi-button"
+                      type="submit"
                       disabled={loading}
                     >
                       {loading && (
                         <span
-                          className='spinner-border spinner-border-sm'
-                          role='status'
-                          aria-hidden='true'
+                          className="spinner-border spinner-border-sm"
+                          role="status"
+                          aria-hidden="true"
                         ></span>
                       )}{' '}
                       Send Mail
@@ -213,18 +201,18 @@ function Contact() {
                 {handleAlerts()}
               </div>
             </div>
-            <div className='col-lg-6'>
-              <div className='mi-contact-info'>
-                <div className='mi-contact-infoblock'>
-                  <span className='mi-contact-infoblock-icon'>
+            <div className="col-lg-6">
+              <div className="mi-contact-info">
+                <div className="mi-contact-infoblock">
+                  <span className="mi-contact-infoblock-icon">
                     <Icon.Phone />
                   </span>
-                  <div className='mi-contact-infoblock-content'>
+                  <div className="mi-contact-infoblock-content">
                     <h6>Phone / WhatsApp</h6>
                     <p>
                       <a
-                        target='_blank'
-                        rel='noopener noreferrer'
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href={numberFormatter(dataProfile.data.profile.phone)}
                       >
                         {dataProfile.data.profile.phone}
@@ -232,11 +220,11 @@ function Contact() {
                     </p>
                   </div>
                 </div>
-                <div className='mi-contact-infoblock'>
-                  <span className='mi-contact-infoblock-icon'>
+                <div className="mi-contact-infoblock">
+                  <span className="mi-contact-infoblock-icon">
                     <Icon.Mail />
                   </span>
-                  <div className='mi-contact-infoblock-content'>
+                  <div className="mi-contact-infoblock-content">
                     <h6>Email</h6>
                     <p>
                       <a href={`mailto:${dataProfile.data.email}`}>
@@ -245,11 +233,11 @@ function Contact() {
                     </p>
                   </div>
                 </div>
-                <div className='mi-contact-infoblock'>
-                  <span className='mi-contact-infoblock-icon'>
+                <div className="mi-contact-infoblock">
+                  <span className="mi-contact-infoblock-icon">
                     <Icon.MapPin />
                   </span>
-                  <div className='mi-contact-infoblock-content'>
+                  <div className="mi-contact-infoblock-content">
                     <h6>Address</h6>
                     <p>{dataProfile.data.profile.address}</p>
                   </div>
@@ -261,6 +249,14 @@ function Contact() {
       </div>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`https://api.granitebps.com/api/v1/profile`);
+  const errorCode = res.ok ? false : res.statusCode;
+  const dataProfile = await res.json();
+
+  return { props: { dataProfile: dataProfile, errorCode } };
 }
 
 export default Contact;

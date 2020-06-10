@@ -9,7 +9,9 @@
     "disqus-react": "^1.0.7",
     "fslightbox-react": "^1.4.0",
     "moment": "^2.26.0",
+    "next": "^9.4.4",
     "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-feather": "^2.0.8",
@@ -27,10 +29,9 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "set PORT=3006 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "browserslist": {
     "production": [

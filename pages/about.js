@@ -4,41 +4,18 @@ import * as Icon from 'react-feather';
 import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import Service from '../components/Service';
-import useAxios from '../utils/useAxios';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 import Technology from '../components/Technology';
 
-function About() {
-  const [
-    { data: dataProfile, loading: loadingProfile, error: errorProfile },
-    refetchProfile,
-  ] = useAxios('profile', { useCache: false });
-  const [
-    { data: dataService, loading: loadingService, error: errorService },
-  ] = useAxios('service', { useCache: false });
-  const [
-    {
-      data: dataTechnology,
-      loading: loadingTechnology,
-      error: errorTechnology,
-    },
-  ] = useAxios('technology', { useCache: false });
+function about({ dataProfile, dataService, dataTechnology, error }) {
   const [toggler, setToggler] = useState(false);
 
-  if (loadingProfile || loadingService || loadingTechnology) {
-    return <Loading />;
-  }
-
-  if (errorProfile || errorService || errorTechnology) {
-    return <Error retry={refetchProfile} />;
-  }
-
   return (
-    <Layout>
-      <Helmet>
+    <Layout data={dataProfile.data}>
+      <Head>
         <title>Granite Bagas - About</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="About Granite Bagas" />
         <meta property="og:title" content="About Page of Granite Bagas Site" />
         <meta property="og:description" content="About Granite Bagas" />
@@ -56,7 +33,7 @@ function About() {
         />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-      </Helmet>
+      </Head>
 
       <div className="mi-about-area mi-section mi-padding-top">
         <div className="container">
@@ -179,4 +156,23 @@ function About() {
   );
 }
 
-export default About;
+export async function getServerSideProps() {
+  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
+  const dataProfile = await resProfile.json();
+  const resService = await fetch(`https://api.granitebps.com/api/v1/service`);
+  const dataService = await resService.json();
+  const resTechnology = await fetch(
+    `https://api.granitebps.com/api/v1/technology`,
+  );
+  const dataTechnology = await resTechnology.json();
+
+  return {
+    props: {
+      dataProfile: dataProfile,
+      dataService: dataService,
+      dataTechnology: dataTechnology,
+    },
+  };
+}
+
+export default about;

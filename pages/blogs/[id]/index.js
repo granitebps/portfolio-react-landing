@@ -1,39 +1,26 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
 import Disqus from 'disqus-react';
-import Layout from '../components/Layout';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import useAxios from '../utils/useAxios';
-import { Helmet } from 'react-helmet';
+import Layout from '../../../components/Layout';
+import Head from 'next/head';
 
-function BlogDetails(props) {
-  const blogId = props.match.params.id;
-  const blogFile = props.match.params.title;
-  const [
-    { data: dataBlog, loading: loadingBlog, error: errorBlog },
-    refetchBlog,
-  ] = useAxios(`blog/${blogId}`, { useCache: false });
+function BlogDetails({ dataBlog, dataProfile }) {
+  const blogId = dataBlog.data.id;
+  const blogFile = dataBlog.data.title;
 
   const disqusShortname = 'granitebps-2'; //found in your Disqus.com dashboard
   const disqusConfig = {
     url: `https://granitebps.com`, //Homepage link of this site.
-    identifier: blogId,
+    identifier: blogId.toString(),
     title: blogFile,
   };
 
-  if (loadingBlog) {
-    return <Loading />;
-  }
-
-  if (errorBlog) {
-    return <Error retry={refetchBlog} />;
-  }
-
   return (
-    <Layout>
-      <Helmet>
+    <Layout data={dataProfile.data}>
+      <Head>
         <title>Granite Bagas - {dataBlog.data.title}</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={dataBlog.data.body} />
         <meta property="og:title" content={dataBlog.data.title} />
         <meta property="og:description" content={dataBlog.data.body} />
@@ -45,7 +32,7 @@ function BlogDetails(props) {
         <meta name="twitter:image" content={dataBlog.data.image} />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
-      </Helmet>
+      </Head>
 
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
@@ -69,6 +56,21 @@ function BlogDetails(props) {
       </div>
     </Layout>
   );
+}
+
+export async function getServerSideProps({ query }) {
+  const { id } = query;
+  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
+  const dataProfile = await resProfile.json();
+  const resBlog = await fetch(`https://api.granitebps.com/api/v1/blog/${id}`);
+  const dataBlog = await resBlog.json();
+
+  return {
+    props: {
+      dataProfile: dataProfile,
+      dataBlog: dataBlog,
+    },
+  };
 }
 
 export default BlogDetails;
