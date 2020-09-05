@@ -11,12 +11,8 @@ function Portfolio(props) {
   };
 
   return (
-    <div
-      className={
-        props.isVisible ? 'mi-portfolio mi-portfolio-visible' : 'mi-portfolio'
-      }
-    >
-      <div className='mi-portfolio-image'>
+    <div className={props.isVisible ? 'mi-portfolio mi-portfolio-visible' : 'mi-portfolio'}>
+      <div className="mi-portfolio-image">
         <img src={thumbnail} alt={name} />
         <ul>
           <li>
@@ -26,7 +22,7 @@ function Portfolio(props) {
           </li>
           {url ? (
             <li>
-              <a rel='noopener noreferrer' target='_blank' href={url}>
+              <a rel="noopener noreferrer" target="_blank" href={url}>
                 <Icon.Link />
               </a>
             </li>
@@ -37,16 +33,16 @@ function Portfolio(props) {
         <h5>{name}</h5>
       ) : (
         <h5>
-          <a rel='noopener noreferrer' target='_blank' href={url}>
+          <a rel="noopener noreferrer" target="_blank" href={url}>
             {name}
           </a>
         </h5>
       )}
-      <span className='color-theme'>
+      <span className="color-theme">
         <i>{type === '1' ? 'Personal Project' : 'Client Project'}</i>
       </span>
       <h6>{desc}</h6>
-      <FsLightbox toggler={toggler} type='image' sources={pic} />
+      <FsLightbox toggler={toggler} type="image" sources={pic} />
     </div>
   );
 }

@@ -84,27 +84,15 @@ function Contact({ dataProfile }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Contact Granite Bagas" />
-        <meta
-          property="og:title"
-          content="Contact Page of Granite Bagas Site"
-        />
+        <meta property="og:title" content="Contact Page of Granite Bagas Site" />
         <meta property="og:description" content="Contact Granite Bagas" />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
-        <meta
-          name="twitter:title"
-          content="Contact Page of Granite Bagas Site"
-        />
+        <meta name="twitter:title" content="Contact Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Contact Granite Bagas" />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -117,15 +105,9 @@ function Contact({ dataProfile }) {
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                <form
-                  action="#"
-                  className="mi-form mi-contact-form"
-                  onSubmit={submitHandler}
-                >
+                <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
-                    <label htmlFor="contact-form-first-name">
-                      Enter your first name*
-                    </label>
+                    <label htmlFor="contact-form-first-name">Enter your first name*</label>
                     <input
                       onChange={handleChange}
                       type="text"
@@ -135,9 +117,7 @@ function Contact({ dataProfile }) {
                     />
                   </div>
                   <div className="mi-form-field">
-                    <label htmlFor="contact-form-last-name">
-                      Enter your last name*
-                    </label>
+                    <label htmlFor="contact-form-last-name">Enter your last name*</label>
                     <input
                       onChange={handleChange}
                       type="text"
@@ -147,9 +127,7 @@ function Contact({ dataProfile }) {
                     />
                   </div>
                   <div className="mi-form-field">
-                    <label htmlFor="contact-form-email">
-                      Enter your email*
-                    </label>
+                    <label htmlFor="contact-form-email">Enter your email*</label>
                     <input
                       onChange={handleChange}
                       type="email"
@@ -159,9 +137,7 @@ function Contact({ dataProfile }) {
                     />
                   </div>
                   <div className="mi-form-field">
-                    <label htmlFor="contact-form-phone">
-                      Enter your phone*
-                    </label>
+                    <label htmlFor="contact-form-phone">Enter your phone*</label>
                     <input
                       onChange={handleChange}
                       type="number"
@@ -171,30 +147,22 @@ function Contact({ dataProfile }) {
                     />
                   </div>
                   <div className="mi-form-field">
-                    <label htmlFor="contact-form-message">
-                      Enter your Message*
-                    </label>
+                    <label htmlFor="contact-form-message">Enter your Message*</label>
                     <textarea
                       onChange={handleChange}
                       name="message"
                       id="contact-form-message"
                       cols="30"
                       rows="6"
-                      value={formdata.message}
-                    ></textarea>
+                      value={formdata.message}></textarea>
                   </div>
                   <div className="mi-form-field">
-                    <button
-                      className="mi-button"
-                      type="submit"
-                      disabled={loading}
-                    >
+                    <button className="mi-button" type="submit" disabled={loading}>
                       {loading && (
                         <span
                           className="spinner-border spinner-border-sm"
                           role="status"
-                          aria-hidden="true"
-                        ></span>
+                          aria-hidden="true"></span>
                       )}{' '}
                       Send Mail
                     </button>
@@ -215,8 +183,7 @@ function Contact({ dataProfile }) {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={numberFormatter(dataProfile.data.profile.phone)}
-                      >
+                        href={numberFormatter(dataProfile.data.profile.phone)}>
                         {dataProfile.data.profile.phone}
                       </a>
                     </p>
@@ -229,9 +196,7 @@ function Contact({ dataProfile }) {
                   <div className="mi-contact-infoblock-content">
                     <h6>Email</h6>
                     <p>
-                      <a href={`mailto:${dataProfile.data.email}`}>
-                        {dataProfile.data.email}
-                      </a>
+                      <a href={`mailto:${dataProfile.data.email}`}>{dataProfile.data.email}</a>
                     </p>
                   </div>
                 </div>

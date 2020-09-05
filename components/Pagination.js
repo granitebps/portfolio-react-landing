@@ -5,13 +5,7 @@ const LineIcon = dynamic(() => import('react-lineicons'), {
   ssr: false,
 });
 
-function Pagination({
-  itemsPerPage,
-  totalItems,
-  paginate,
-  currentPage,
-  className,
-}) {
+function Pagination({ itemsPerPage, totalItems, paginate, currentPage, className }) {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
@@ -29,10 +23,7 @@ function Pagination({
           </li>
         )}
         {pageNumbers.map((number) => (
-          <li
-            key={number}
-            className={currentPage === number ? 'is-active' : null}
-          >
+          <li key={number} className={currentPage === number ? 'is-active' : null}>
             <a onClick={(e) => paginate(e, number)} href="!#">
               {number}
             </a>

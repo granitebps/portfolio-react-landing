@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Progress(props){
+function Progress(props) {
   return (
     <div className="mi-progress">
       <h6 className="mi-progress-title">{props.title}</h6>
@@ -9,8 +9,7 @@ function Progress(props){
         <div className="mi-progress-container">
           <span
             className="mi-progress-active"
-            style={props.isVisible ? {width: `${props.percentage}%`} : {width: 0}}
-          ></span>
+            style={props.isVisible ? { width: `${props.percentage}%` } : { width: 0 }}></span>
         </div>
       </div>
     </div>

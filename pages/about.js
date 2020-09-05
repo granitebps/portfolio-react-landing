@@ -7,7 +7,7 @@ import Service from '../components/Service';
 import Head from 'next/head';
 import Technology from '../components/Technology';
 
-function about({ dataProfile, dataService, dataTechnology, error }) {
+function about({ dataProfile, dataService, dataTechnology }) {
   const [toggler, setToggler] = useState(false);
 
   return (
@@ -19,19 +19,13 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
         <meta name="description" content="About Granite Bagas" />
         <meta property="og:title" content="About Page of Granite Bagas Site" />
         <meta property="og:description" content="About Granite Bagas" />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="About Page of Granite Bagas Site" />
         <meta name="twitter:description" content="About Granite Bagas" />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -54,17 +48,14 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
                 <FsLightbox
                   toggler={toggler}
                   type="image"
-                  sources={[
-                    'https://api.granitebps.com/images/avatar/foto ijazah.png',
-                  ]}
+                  sources={['https://api.granitebps.com/images/avatar/foto ijazah.png']}
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="mi-about-content">
                 <h3>
-                  I am{' '}
-                  <span className="color-theme">{dataProfile.data.name}</span>
+                  I am <span className="color-theme">{dataProfile.data.name}</span>
                 </h3>
                 <p>{dataProfile.data.profile.about}</p>
                 <ul>
@@ -81,8 +72,7 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
                     <b>Nationality</b> {dataProfile.data.profile.nationality}
                   </li>
                   <li>
-                    <b>Languages</b>{' '}
-                    {dataProfile.data.profile.languages.toString()}
+                    <b>Languages</b> {dataProfile.data.profile.languages.toString()}
                   </li>
                   <li>
                     <b>Email</b> {dataProfile.data.email}
@@ -92,9 +82,7 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
                   </li>
                   <li>
                     <b>Freelance</b>{' '}
-                    {dataProfile.data.profile.freelance === '1'
-                      ? 'Available'
-                      : 'Not Available'}
+                    {dataProfile.data.profile.freelance === '1' ? 'Available' : 'Not Available'}
                   </li>
                 </ul>
                 <a href={dataProfile.data.profile.cv} className="mi-button">
@@ -111,10 +99,7 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
               {dataService.data.map((service) => (
-                <div
-                  className="col-lg-4 col-md-6 col-12 mt-30"
-                  key={service.name}
-                >
+                <div className="col-lg-4 col-md-6 col-12 mt-30" key={service.name}>
                   <Service service={service} />
                 </div>
               ))}
@@ -128,10 +113,7 @@ function about({ dataProfile, dataService, dataTechnology, error }) {
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
               {dataTechnology.data.map((technology) => (
-                <div
-                  className="col-lg-2 col-md-3 col-4 mt-30"
-                  key={technology.name}
-                >
+                <div className="col-lg-2 col-md-3 col-4 mt-30" key={technology.name}>
                   <Technology technology={technology} />
                 </div>
               ))}
@@ -163,9 +145,7 @@ export async function getServerSideProps() {
   const dataProfile = await resProfile.json();
   const resService = await fetch(`https://api.granitebps.com/api/v1/service`);
   const dataService = await resService.json();
-  const resTechnology = await fetch(
-    `https://api.granitebps.com/api/v1/technology`,
-  );
+  const resTechnology = await fetch(`https://api.granitebps.com/api/v1/technology`);
   const dataTechnology = await resTechnology.json();
 
   return {

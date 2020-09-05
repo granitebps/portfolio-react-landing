@@ -11,10 +11,7 @@ function portfolio({ dataPortfolio, dataProfile }) {
 
   const indexOfLastPortfolios = currentPage * portfoliosPerPage;
   const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage;
-  const currentPortfolios = dataPortfolio.data.slice(
-    indexOfFirstPortfolios,
-    indexOfLastPortfolios,
-  );
+  const currentPortfolios = dataPortfolio.data.slice(indexOfFirstPortfolios, indexOfLastPortfolios);
 
   const paginate = (e, pageNumber) => {
     e.preventDefault();
@@ -28,27 +25,15 @@ function portfolio({ dataPortfolio, dataProfile }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Granite Bagas Portfolios" />
-        <meta
-          property="og:title"
-          content="Portfolios Page of Granite Bagas Site"
-        />
+        <meta property="og:title" content="Portfolios Page of Granite Bagas Site" />
         <meta property="og:description" content="Granite Bagas Portfolios" />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
-        <meta
-          name="twitter:title"
-          content="Portfolios Page of Granite Bagas Site"
-        />
+        <meta name="twitter:title" content="Portfolios Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Granite Bagas Portfolios" />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -76,9 +61,7 @@ function portfolio({ dataPortfolio, dataProfile }) {
 export async function getServerSideProps() {
   const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
   const dataProfile = await resProfile.json();
-  const resPortfolio = await fetch(
-    `https://api.granitebps.com/api/v1/portfolio`,
-  );
+  const resPortfolio = await fetch(`https://api.granitebps.com/api/v1/portfolio`);
   const dataPortfolio = await resPortfolio.json();
 
   return {

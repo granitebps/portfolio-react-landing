@@ -6,15 +6,15 @@ export const ResumeExperience = (props) => {
   const startDate = moment(start_date).format('MMMM YYYY');
   const endDate = end_date ? moment(end_date).format('MMMM YYYY') : 'Now';
   return (
-    <div className='mi-resume mt-30'>
-      <div className='mi-resume-summary'>
-        <h6 className='mi-resume-year'>
+    <div className="mi-resume mt-30">
+      <div className="mi-resume-summary">
+        <h6 className="mi-resume-year">
           {startDate} - {endDate}
         </h6>
       </div>
-      <div className='mi-resume-details'>
+      <div className="mi-resume-details">
         <h5>{position}</h5>
-        <h6 className='mi-resume-company'>{company}</h6>
+        <h6 className="mi-resume-company">{company}</h6>
         <p>{desc}</p>
       </div>
     </div>
@@ -24,15 +24,15 @@ export const ResumeExperience = (props) => {
 export const ResumeEducation = (props) => {
   const { start_year, end_year, name, institute } = props.resumeData;
   return (
-    <div className='mi-resume mt-30'>
-      <div className='mi-resume-summary'>
-        <h6 className='mi-resume-year'>
+    <div className="mi-resume mt-30">
+      <div className="mi-resume-summary">
+        <h6 className="mi-resume-year">
           {start_year} - {end_year}
         </h6>
       </div>
-      <div className='mi-resume-details'>
+      <div className="mi-resume-details">
         <h5>{name}</h5>
-        <h6 className='mi-resume-company'>{institute}</h6>
+        <h6 className="mi-resume-company">{institute}</h6>
       </div>
     </div>
   );

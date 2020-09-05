@@ -3,7 +3,7 @@ import Link from 'next/link';
 import moment from 'moment';
 
 function Blog(props) {
-  const { id, image, title, created_at, slug } = props.data;
+  const { id, image, title, created_at } = props.data;
 
   return (
     <div className="mi-blog">

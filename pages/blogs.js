@@ -28,19 +28,13 @@ function blogs({ dataBlog, dataProfile }) {
         <meta name="description" content="Blogs Granite Bagas" />
         <meta property="og:title" content="Blogs Page of Granite Bagas Site" />
         <meta property="og:description" content="Blogs Granite Bagas" />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Blogs Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Blogs Granite Bagas" />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />

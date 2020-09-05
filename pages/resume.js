@@ -15,27 +15,15 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Granite Bagas Resumes" />
-        <meta
-          property="og:title"
-          content="Resumes Page of Granite Bagas Site"
-        />
+        <meta property="og:title" content="Resumes Page of Granite Bagas Site" />
         <meta property="og:description" content="Granite Bagas Resumes" />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
-        <meta
-          name="twitter:title"
-          content="Resumes Page of Granite Bagas Site"
-        />
+        <meta name="twitter:title" content="Resumes Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Granite Bagas Resumes" />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -47,11 +35,7 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
           <div className="mi-skills">
             <div className="row mt-30-reverse">
               {dataSkill.data.map((skill) => (
-                <TrackVisibility
-                  once
-                  className="col-lg-6 mt-30"
-                  key={skill.name}
-                >
+                <TrackVisibility once className="col-lg-6 mt-30" key={skill.name}>
                   <Progress title={skill.name} percentage={skill.percentage} />
                 </TrackVisibility>
               ))}
@@ -86,13 +70,9 @@ export async function getServerSideProps() {
   const dataProfile = await resProfile.json();
   const resSkill = await fetch(`https://api.granitebps.com/api/v1/skill`);
   const dataSkill = await resSkill.json();
-  const resExperience = await fetch(
-    `https://api.granitebps.com/api/v1/experience`,
-  );
+  const resExperience = await fetch(`https://api.granitebps.com/api/v1/experience`);
   const dataExperience = await resExperience.json();
-  const resEducation = await fetch(
-    `https://api.granitebps.com/api/v1/education`,
-  );
+  const resEducation = await fetch(`https://api.granitebps.com/api/v1/education`);
   const dataEducation = await resEducation.json();
 
   return {

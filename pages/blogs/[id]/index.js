@@ -44,15 +44,9 @@ function BlogDetails({ dataBlog, dataProfile }) {
             className="img-fluid mx-auto d-block"
             width="30%"
           />
-          <ReactMarkdown
-            source={dataBlog.data.body}
-            escapeHtml={false}
-          ></ReactMarkdown>
+          <ReactMarkdown source={dataBlog.data.body} escapeHtml={false}></ReactMarkdown>
           <div className="mi-blog-details-comments mt-30">
-            <Disqus.DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
+            <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
         </div>
       </div>

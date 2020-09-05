@@ -48,19 +48,13 @@ const index = ({ data }) => {
         <meta name="description" content={data.data.profile.about} />
         <meta property="og:title" content="Home Page of Granite Bagas Site" />
         <meta property="og:description" content={data.data.profile.about} />
-        <meta
-          property="og:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Home Page of Granite Bagas Site" />
         <meta name="twitter:description" content={data.data.profile.about} />
-        <meta
-          name="twitter:image"
-          content="http://api.granitebps.com/images/gbps.png"
-        />
+        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
