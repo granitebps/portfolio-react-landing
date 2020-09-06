@@ -113,7 +113,7 @@ function About() {
                   </li>
                   <li>
                     <b>Freelance</b>{' '}
-                    {dataProfile.data.profile.freelance === '1'
+                    {dataProfile.data.profile.freelance === 1
                       ? 'Available'
                       : 'Not Available'}
                   </li>
