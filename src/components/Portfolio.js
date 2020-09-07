@@ -5,6 +5,7 @@ import FsLightbox from 'fslightbox-react';
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
   const { name, desc, thumbnail, pic, url, type } = props.content;
+  const pics = pic.map((p) => p.pic);
 
   const handleToggler = (value) => {
     setToggler(value);
@@ -46,7 +47,7 @@ function Portfolio(props) {
         <i>{type === '1' ? 'Personal Project' : 'Client Project'}</i>
       </span>
       <h6>{desc}</h6>
-      <FsLightbox toggler={toggler} type='image' sources={pic} />
+      <FsLightbox toggler={toggler} type='image' sources={pics} />
     </div>
   );
 }
