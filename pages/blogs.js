@@ -5,6 +5,7 @@ import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import BlogsView from '../components/BlogsView';
 import Pagination from '../components/Pagination';
+import { baseAxios } from '../utils/useAxios';
 
 function blogs({ dataBlog, dataProfile }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,10 +61,8 @@ function blogs({ dataBlog, dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const dataProfile = await resProfile.json();
-  const resBlog = await fetch(`https://api.granitebps.com/api/v1/blog`);
-  const dataBlog = await resBlog.json();
+  const { data: dataProfile } = await baseAxios.get('profile');
+  const { data: dataBlog } = await baseAxios.get('blog');
 
   return {
     props: {

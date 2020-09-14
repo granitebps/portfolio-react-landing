@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Service from '../components/Service';
 import Head from 'next/head';
 import Technology from '../components/Technology';
+import { baseAxios } from '../utils/useAxios';
 
 function about({ dataProfile, dataService, dataTechnology }) {
   const [toggler, setToggler] = useState(false);
@@ -141,12 +142,9 @@ function about({ dataProfile, dataService, dataTechnology }) {
 }
 
 export async function getServerSideProps() {
-  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const dataProfile = await resProfile.json();
-  const resService = await fetch(`https://api.granitebps.com/api/v1/service`);
-  const dataService = await resService.json();
-  const resTechnology = await fetch(`https://api.granitebps.com/api/v1/technology`);
-  const dataTechnology = await resTechnology.json();
+  const { data: dataProfile } = await baseAxios.get('profile');
+  const { data: dataService } = await baseAxios.get('service');
+  const { data: dataTechnology } = await baseAxios.get('technology');
 
   return {
     props: {

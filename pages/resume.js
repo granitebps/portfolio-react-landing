@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Progress from '../components/Progress';
 import { ResumeEducation, ResumeExperience } from '../components/Resume';
 import Head from 'next/head';
+import { baseAxios } from '../utils/useAxios';
 
 function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
   return (
@@ -66,14 +67,10 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const dataProfile = await resProfile.json();
-  const resSkill = await fetch(`https://api.granitebps.com/api/v1/skill`);
-  const dataSkill = await resSkill.json();
-  const resExperience = await fetch(`https://api.granitebps.com/api/v1/experience`);
-  const dataExperience = await resExperience.json();
-  const resEducation = await fetch(`https://api.granitebps.com/api/v1/education`);
-  const dataEducation = await resEducation.json();
+  const { data: dataProfile } = await baseAxios.get('profile');
+  const { data: dataSkill } = await baseAxios.get('skill');
+  const { data: dataExperience } = await baseAxios.get('experience');
+  const { data: dataEducation } = await baseAxios.get('education');
 
   return {
     props: {

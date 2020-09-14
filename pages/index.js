@@ -1,5 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
+import { baseAxios } from '../utils/useAxios';
 import Socialicons from '../components/Socialicons';
 import Layout from '../components/Layout';
 import Head from 'next/head';
@@ -81,8 +82,7 @@ const index = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const data = await res.json();
+  const { data } = await baseAxios.get('profile');
 
   return { props: { data } };
 }

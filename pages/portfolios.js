@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import Pagination from '../components/Pagination';
 import PortfoliosView from '../components/PortfoliosView';
 import Head from 'next/head';
+import { baseAxios } from '../utils/useAxios';
 
 function portfolio({ dataPortfolio, dataProfile }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -59,10 +60,8 @@ function portfolio({ dataPortfolio, dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const resProfile = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const dataProfile = await resProfile.json();
-  const resPortfolio = await fetch(`https://api.granitebps.com/api/v1/portfolio`);
-  const dataPortfolio = await resPortfolio.json();
+  const { data: dataProfile } = await baseAxios.get('profile');
+  const { data: dataPortfolio } = await baseAxios.get('portfolio');
 
   return {
     props: {

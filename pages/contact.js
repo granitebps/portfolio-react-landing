@@ -219,11 +219,9 @@ function Contact({ dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`https://api.granitebps.com/api/v1/profile`);
-  const errorCode = res.ok ? false : res.statusCode;
-  const dataProfile = await res.json();
+  const { data: dataProfile } = await baseAxios.get('profile');
 
-  return { props: { dataProfile: dataProfile, errorCode } };
+  return { props: { dataProfile: dataProfile } };
 }
 
 export default Contact;
