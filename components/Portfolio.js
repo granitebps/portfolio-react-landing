@@ -40,7 +40,7 @@ function Portfolio(props) {
         </h5>
       )}
       <span className="color-theme">
-        <i>{type === '1' ? 'Personal Project' : 'Client Project'}</i>
+        <i>{type === 1 ? 'Personal Project' : 'Client Project'}</i>
       </span>
       <h6>{desc}</h6>
       <FsLightbox toggler={toggler} type="image" sources={pics} />
