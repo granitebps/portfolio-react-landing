@@ -108,7 +108,7 @@ function about({ dataProfile, dataService, dataTechnology }) {
           </div>
         </div>
       </div>
-      <div className="mi-service-area mi-section mi-padding-top">
+      <div className="mi-service-area mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
           <Sectiontitle title="Technologies" />
           <div className="mi-service-wrapper">
@@ -118,21 +118,6 @@ function about({ dataProfile, dataService, dataTechnology }) {
                   <Technology technology={technology} />
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Reviews" />
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <h3>Under Construction</h3>
-              {/* <Slider className="mi-testimonial-slider" {...sliderSettings}>
-                {reviews.map(review =>(
-                  <Testimonial key={review.id} content={review}/>
-                ))}
-              </Slider> */}
             </div>
           </div>
         </div>

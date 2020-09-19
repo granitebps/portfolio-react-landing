@@ -3,14 +3,14 @@
  */
 
 .mi-testimonial {
-  &-slider{
-    .slick-list{
+  &-slider {
+    .slick-list {
       margin-left: -15px;
       margin-right: -15px;
     }
   }
 
-  &{
+  & {
     margin: 0 15px;
   }
 
@@ -25,7 +25,7 @@
     background: lighten($color-bg-body, 5);
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 30px;
       top: 100%;
@@ -41,6 +41,12 @@
   }
 
   &-author {
+    h4 {
+      margin-bottom: 0;
+      font-weight: 700;
+      color: $color-theme;
+    }
+
     h5 {
       margin-bottom: 0;
     }
@@ -49,32 +55,43 @@
       margin-bottom: 0;
       color: $color-body;
     }
+
+    a {
+      text-decoration: none;
+      color: $color-body;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: $color-theme;
+        text-decoration: underline;
+      }
+    }
   }
 
-  @media #{$layout-laptop}{
-    &-content{
+  @media #{$layout-laptop} {
+    &-content {
       padding: 20px;
     }
   }
 
-  @media #{$layout-tablet}{
-    &-content{
-      p{
+  @media #{$layout-tablet} {
+    &-content {
+      p {
         font-size: 1.1rem;
       }
     }
   }
 
-  @media #{$layout-mobile-lg}{
-    &-content{
-      p{
+  @media #{$layout-mobile-lg} {
+    &-content {
+      p {
         font-size: 1.1rem;
       }
     }
   }
 
-  @media #{$layout-mobile-sm}{
-    &-content{
+  @media #{$layout-mobile-sm} {
+    &-content {
       padding: 20px;
     }
   }

@@ -1,14 +1,15 @@
 import React from 'react';
 import TrackVisibility from 'react-on-screen';
+import Head from 'next/head';
 import Sectiontitle from '../components/Sectiontitle';
 import Smalltitle from '../components/Smalltitle';
 import Layout from '../components/Layout';
 import Progress from '../components/Progress';
 import { ResumeEducation, ResumeExperience } from '../components/Resume';
-import Head from 'next/head';
 import { baseAxios } from '../utils/useAxios';
+import Certification from '../components/Certification';
 
-function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
+function resume({ dataEducation, dataExperience, dataSkill, dataProfile, dataCertification }) {
   return (
     <Layout data={dataProfile.data}>
       <Head>
@@ -44,7 +45,7 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
           </div>
         </div>
       </div>
-      <div className="mi-resume-area mi-section mi-padding-top mi-padding-bottom">
+      <div className="mi-resume-area mi-section mi-padding-top">
         <div className="container">
           <Sectiontitle title="Resume" />
           <Smalltitle title="Working Experience" icon="briefcase" />
@@ -62,6 +63,18 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile }) {
           </div>
         </div>
       </div>
+      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
+        <div className="container">
+          <Sectiontitle title="Certification" />
+          <div className="row">
+            {dataCertification.data.map((certification) => (
+              <div className="col-lg-6 mb-5" key={certification.id}>
+                <Certification content={certification} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
@@ -71,6 +84,7 @@ export async function getServerSideProps() {
   const { data: dataSkill } = await baseAxios.get('skill');
   const { data: dataExperience } = await baseAxios.get('experience');
   const { data: dataEducation } = await baseAxios.get('education');
+  const { data: dataCertification } = await baseAxios.get('certification');
 
   return {
     props: {
@@ -78,6 +92,7 @@ export async function getServerSideProps() {
       dataSkill: dataSkill,
       dataExperience: dataExperience,
       dataEducation: dataEducation,
+      dataCertification: dataCertification,
     },
   };
 }
