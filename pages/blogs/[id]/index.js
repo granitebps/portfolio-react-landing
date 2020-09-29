@@ -22,15 +22,15 @@ function BlogDetails({ dataBlog, dataProfile }) {
         <title>Granite Bagas - {dataBlog.data.title}</title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={dataBlog.data.body} />
+        <meta name="description" content={`${dataBlog.data.body.substr(0, 100)}...`} />
         <meta property="og:title" content={dataBlog.data.title} />
-        <meta property="og:description" content={dataBlog.data.body} />
+        <meta property="og:description" content={`${dataBlog.data.body.substr(0, 100)}...`} />
         <meta property="og:image" content={dataBlog.data.image} />
         <meta property="og:url" content="https://granitebps.site" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="article" />
         <meta name="twitter:title" content={dataBlog.data.title} />
-        <meta name="twitter:description" content={dataBlog.data.body} />
+        <meta name="twitter:description" content={`${dataBlog.data.body.substr(0, 100)}...`} />
         <meta name="twitter:image" content={dataBlog.data.image} />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
