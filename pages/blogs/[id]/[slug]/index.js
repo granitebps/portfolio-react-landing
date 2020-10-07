@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
 import Disqus from 'disqus-react';
-import Layout from '../../../components/Layout';
+import Layout from '../../../../components/Layout';
 import Head from 'next/head';
-import { baseAxios } from '../../../utils/useAxios';
+import { baseAxios } from '../../../../utils/useAxios';
 
 function BlogDetails({ dataBlog, dataProfile }) {
   const blogId = dataBlog.data.id;
@@ -56,9 +56,9 @@ function BlogDetails({ dataBlog, dataProfile }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const { id } = query;
+  const { id, slug } = query;
   const { data: dataProfile } = await baseAxios.get('profile');
-  const { data: dataBlog } = await baseAxios.get(`blog/${id}`);
+  const { data: dataBlog } = await baseAxios.get(`blog/${id}/${slug}`);
 
   return {
     props: {

@@ -3,12 +3,12 @@ import Link from 'next/link';
 import moment from 'moment';
 
 function Blog(props) {
-  const { id, image, title, created_at } = props.data;
+  const { id, image, title, created_at, slug } = props.data;
 
   return (
     <div className="mi-blog">
       <div className="mi-blog-image">
-        <Link href={`blogs/[id]`} as={`/blogs/${id}`}>
+        <Link href={`blogs/[id]/[slug]`} as={`/blogs/${id}/${slug}`}>
           <a>
             <img src={image} alt={title} />
           </a>
@@ -20,7 +20,7 @@ function Blog(props) {
       </div>
       <div className="mi-blog-content">
         <h5>
-          <Link href={`blogs/[id]`} as={`/blogs/${id}`}>
+          <Link href={`blogs/[id]/[slug]`} as={`/blogs/${id}/${slug}`}>
             <a>{title}</a>
           </Link>
         </h5>
