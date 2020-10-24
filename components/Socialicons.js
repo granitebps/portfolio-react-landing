@@ -38,6 +38,11 @@ const Socialicons = ({ social }) => {
           <LineIcon name="youtube" />
         </a>
       </li>
+      <li>
+        <a rel="noopener noreferrer" target="_blank" href={social.medium}>
+          <LineIcon name="medium" />
+        </a>
+      </li>
     </ul>
   );
 };
