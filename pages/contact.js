@@ -4,6 +4,7 @@ import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import { baseAxios } from '../utils/useAxios';
 import Head from 'next/head';
+import axios from 'axios';
 
 function Contact({ dataProfile }) {
   const [loading, setLoading] = useState(false);
@@ -37,7 +38,7 @@ function Contact({ dataProfile }) {
     } else {
       try {
         setLoading(true);
-        await baseAxios({ method: 'POST', url: 'message', data: formdata });
+        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/message`, formdata);
         setError(false);
         setMessage('You message has been sent!!!');
         setFormdata({
