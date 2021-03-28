@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import * as Icon from 'react-feather';
+import { differenceInYears } from 'date-fns';
 import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import Service from '../components/Service';
@@ -64,7 +65,8 @@ function about({ dataProfile, dataService, dataTechnology }) {
                     <b>Full Name</b> {dataProfile.data.name}
                   </li>
                   <li>
-                    <b>Age</b> {dataProfile.data.profile.age} Years
+                    <b>Age</b>
+                    {differenceInYears(new Date(), new Date(dataProfile.data.profile.birth))} Years
                   </li>
                   <li>
                     <b>Phone</b> {dataProfile.data.profile.phone}
