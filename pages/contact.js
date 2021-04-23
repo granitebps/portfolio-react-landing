@@ -210,6 +210,20 @@ function Contact({ dataProfile }) {
                     <p>{dataProfile.data.profile.address}</p>
                   </div>
                 </div>
+                <div className="mi-contact-infoblock">
+                  <span className="mi-contact-infoblock-icon">
+                    <Icon.ThumbsUp />
+                  </span>
+                  <div className="mi-contact-infoblock-content">
+                    <h6>Supoort Me</h6>
+                    <p>
+                      <a href="https://my.domainesia.com/ref.php?u=4419">Domainesia</a>
+                    </p>
+                    <p>
+                      <a href="https://m.do.co/c/c75b7fdabb0c">Digital Ocean</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
