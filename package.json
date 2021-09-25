@@ -2,7 +2,7 @@
   "name": "granitebps.com-react-landing",
   "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "axios-mock-adapter": "^1.17.0",
     "bootstrap": "^4.3.1",
     "date-fns": "^2.19.0",
