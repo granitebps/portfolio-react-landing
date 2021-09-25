@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import BackgroundLines from '../components/BackgroundLines';
 import Head from 'next/head';
 
-const Layout = ({ data, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className="mi-wrapper">
       <Head>
@@ -22,7 +22,7 @@ const Layout = ({ data, children }) => {
         />
       </Head>
       <BackgroundLines />
-      <Header data={data} />
+      <Header />
       {children}
     </div>
   );

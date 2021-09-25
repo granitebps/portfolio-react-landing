@@ -5,7 +5,7 @@ import Layout from '../../../../components/Layout';
 import Head from 'next/head';
 import { baseAxios } from '../../../../utils/useAxios';
 
-function BlogDetails({ dataBlog, dataProfile }) {
+function BlogDetails({ dataBlog }) {
   const blogId = dataBlog.data.id;
   const blogFile = dataBlog.data.title;
 
@@ -17,7 +17,7 @@ function BlogDetails({ dataBlog, dataProfile }) {
   };
 
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - {dataBlog.data.title}</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -26,7 +26,7 @@ function BlogDetails({ dataBlog, dataProfile }) {
         <meta property="og:title" content={dataBlog.data.title} />
         <meta property="og:description" content={`${dataBlog.data.body.substr(0, 100)}...`} />
         <meta property="og:image" content={dataBlog.data.image} />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="article" />
         <meta name="twitter:title" content={dataBlog.data.title} />
@@ -57,12 +57,10 @@ function BlogDetails({ dataBlog, dataProfile }) {
 
 export async function getServerSideProps({ query }) {
   const { id, slug } = query;
-  const { data: dataProfile } = await baseAxios.get('profile');
   const { data: dataBlog } = await baseAxios.get(`blog/${id}/${slug}`);
 
   return {
     props: {
-      dataProfile: dataProfile,
       dataBlog: dataBlog,
     },
   };

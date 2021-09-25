@@ -79,7 +79,7 @@ function Contact({ dataProfile }) {
   };
 
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - Contact</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -87,13 +87,13 @@ function Contact({ dataProfile }) {
         <meta name="description" content="Contact Granite Bagas" />
         <meta property="og:title" content="Contact Page of Granite Bagas Site" />
         <meta property="og:description" content="Contact Granite Bagas" />
-        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:image" content="https://api.granitebps.com/images/gbps.png" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Contact Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Contact Granite Bagas" />
-        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
+        <meta name="twitter:image" content="https://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />

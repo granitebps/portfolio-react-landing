@@ -7,7 +7,7 @@ import BlogsView from '../components/BlogsView';
 import Pagination from '../components/Pagination';
 import { baseAxios } from '../utils/useAxios';
 
-function blogs({ dataBlog, dataProfile }) {
+function blogs({ dataBlog }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(6);
 
@@ -21,7 +21,7 @@ function blogs({ dataBlog, dataProfile }) {
   };
 
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - Blogs</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -29,13 +29,13 @@ function blogs({ dataBlog, dataProfile }) {
         <meta name="description" content="Blogs Granite Bagas" />
         <meta property="og:title" content="Blogs Page of Granite Bagas Site" />
         <meta property="og:description" content="Blogs Granite Bagas" />
-        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:image" content="https://api.granitebps.com/images/gbps.png" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Blogs Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Blogs Granite Bagas" />
-        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
+        <meta name="twitter:image" content="https://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -61,12 +61,10 @@ function blogs({ dataBlog, dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const { data: dataProfile } = await baseAxios.get('profile');
   const { data: dataBlog } = await baseAxios.get('blog');
 
   return {
     props: {
-      dataProfile: dataProfile,
       dataBlog: dataBlog,
     },
   };

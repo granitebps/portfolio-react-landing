@@ -6,7 +6,7 @@ import PortfoliosView from '../components/PortfoliosView';
 import Head from 'next/head';
 import { baseAxios } from '../utils/useAxios';
 
-function portfolio({ dataPortfolio, dataProfile }) {
+function portfolio({ dataPortfolio }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(6);
 
@@ -20,7 +20,7 @@ function portfolio({ dataPortfolio, dataProfile }) {
   };
 
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - Portfolios</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -28,13 +28,13 @@ function portfolio({ dataPortfolio, dataProfile }) {
         <meta name="description" content="Granite Bagas Portfolios" />
         <meta property="og:title" content="Portfolios Page of Granite Bagas Site" />
         <meta property="og:description" content="Granite Bagas Portfolios" />
-        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:image" content="https://api.granitebps.com/images/gbps.png" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Portfolios Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Granite Bagas Portfolios" />
-        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
+        <meta name="twitter:image" content="https://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -60,12 +60,10 @@ function portfolio({ dataPortfolio, dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const { data: dataProfile } = await baseAxios.get('profile');
   const { data: dataPortfolio } = await baseAxios.get('portfolio');
 
   return {
     props: {
-      dataProfile: dataProfile,
       dataPortfolio: dataPortfolio,
     },
   };
