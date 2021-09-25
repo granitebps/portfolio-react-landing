@@ -1,5 +1,7 @@
+/* eslint-disable react/no-children-prop */
 import React from 'react';
-import ReactMarkdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import Disqus from 'disqus-react';
 import Layout from '../../../../components/Layout';
 import Head from 'next/head';
@@ -45,7 +47,7 @@ function BlogDetails({ dataBlog }) {
             className="img-fluid mx-auto d-block"
             width="30%"
           />
-          <ReactMarkdown source={dataBlog.data.body} escapeHtml={false}></ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]} children={dataBlog.data.body} />
           <div className="mi-blog-details-comments mt-30">
             <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
           </div>
