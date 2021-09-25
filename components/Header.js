@@ -7,7 +7,7 @@ const LineIcon = dynamic(() => import('react-lineicons'), {
   ssr: false,
 });
 
-function Header({ data }) {
+function Header() {
   const [navigationToggler, setNavigationToggler] = useState(false);
   const router = useRouter();
 
@@ -25,7 +25,7 @@ function Header({ data }) {
           <Link href="/">
             <a>
               <img
-                src={data.profile.avatar}
+                src="https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/avatar/avatar.jpg"
                 alt="Granite Bagas"
                 className="img-fluid align-self-center"
               />

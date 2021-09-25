@@ -13,7 +13,7 @@ function about({ dataProfile, dataService, dataTechnology }) {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - About</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -21,13 +21,13 @@ function about({ dataProfile, dataService, dataTechnology }) {
         <meta name="description" content="About Granite Bagas" />
         <meta property="og:title" content="About Page of Granite Bagas Site" />
         <meta property="og:description" content="About Granite Bagas" />
-        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:image" content="https://api.granitebps.com/images/gbps.png" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="About Page of Granite Bagas Site" />
         <meta name="twitter:description" content="About Granite Bagas" />
-        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
+        <meta name="twitter:image" content="https://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -50,7 +50,9 @@ function about({ dataProfile, dataService, dataTechnology }) {
                 <FsLightbox
                   toggler={toggler}
                   type="image"
-                  sources={['https://api.granitebps.com/images/avatar/foto ijazah.png']}
+                  sources={[
+                    'https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/avatar/avatar.jpg',
+                  ]}
                 />
               </div>
             </div>

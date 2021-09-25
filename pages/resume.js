@@ -9,9 +9,9 @@ import { ResumeEducation, ResumeExperience } from '../components/Resume';
 import { baseAxios } from '../utils/useAxios';
 import Certification from '../components/Certification';
 
-function resume({ dataEducation, dataExperience, dataSkill, dataProfile, dataCertification }) {
+function resume({ dataEducation, dataExperience, dataSkill, dataCertification }) {
   return (
-    <Layout data={dataProfile.data}>
+    <Layout>
       <Head>
         <title>Granite Bagas - Resumes</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -19,13 +19,13 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile, dataCer
         <meta name="description" content="Granite Bagas Resumes" />
         <meta property="og:title" content="Resumes Page of Granite Bagas Site" />
         <meta property="og:description" content="Granite Bagas Resumes" />
-        <meta property="og:image" content="http://api.granitebps.com/images/gbps.png" />
-        <meta property="og:url" content="https://granitebps.site" />
+        <meta property="og:image" content="https://api.granitebps.com/images/gbps.png" />
+        <meta property="og:url" content="https://granitebps.com" />
         <meta property="og:site_name" content="Granite Bagas" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Resumes Page of Granite Bagas Site" />
         <meta name="twitter:description" content="Granite Bagas Resumes" />
-        <meta name="twitter:image" content="http://api.granitebps.com/images/gbps.png" />
+        <meta name="twitter:image" content="https://api.granitebps.com/images/gbps.png" />
         <meta name="twitter:site" content="@granitbps" />
         <meta name="twitter:creator" content="@granitbps" />
         <meta name="twitter:card" content="summary" />
@@ -80,7 +80,6 @@ function resume({ dataEducation, dataExperience, dataSkill, dataProfile, dataCer
 }
 
 export async function getServerSideProps() {
-  const { data: dataProfile } = await baseAxios.get('profile');
   const { data: dataSkill } = await baseAxios.get('skill');
   const { data: dataExperience } = await baseAxios.get('experience');
   const { data: dataEducation } = await baseAxios.get('education');
@@ -88,7 +87,6 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      dataProfile: dataProfile,
       dataSkill: dataSkill,
       dataExperience: dataExperience,
       dataEducation: dataEducation,
