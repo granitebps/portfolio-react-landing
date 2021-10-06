@@ -87,7 +87,7 @@ function about({ dataProfile, dataService, dataTechnology }) {
                   </li>
                   <li>
                     <b>Freelance</b>{' '}
-                    {dataProfile.data.profile.freelance === 1 ? 'Available' : 'Not Available'}
+                    {dataProfile.data.profile.freelance ? 'Available' : 'Not Available'}
                   </li>
                 </ul>
                 <a href={dataProfile.data.profile.cv} className="mi-button">
