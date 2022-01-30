@@ -15,7 +15,7 @@ export const ResumeExperience = (props) => {
       <div className="mi-resume-details">
         <h5>{position}</h5>
         <h6 className="mi-resume-company">{company}</h6>
-        <p>{desc}</p>
+        <p style={{ whiteSpace: 'pre-wrap' }}>{desc}</p>
       </div>
     </div>
   );
