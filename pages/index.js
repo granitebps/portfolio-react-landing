@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import { baseAxios } from '../utils/useAxios';
+// import { baseAxios } from '../utils/useAxios';
 import Socialicons from '../components/Socialicons';
 import Layout from '../components/Layout';
 import Head from 'next/head';
@@ -82,7 +82,8 @@ const index = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-  const { data } = await baseAxios.get('profile');
+  // const { data } = await baseAxios.get('profile');
+  const data = require('../data/profile.json');
 
   return { props: { data } };
 }

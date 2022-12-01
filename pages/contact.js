@@ -1,82 +1,83 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
 import * as Icon from 'react-feather';
 import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
-import { baseAxios } from '../utils/useAxios';
+// import { baseAxios } from '../utils/useAxios';
 import Head from 'next/head';
-import axios from 'axios';
+// import axios from 'axios';
 
 function Contact({ dataProfile }) {
-  const [loading, setLoading] = useState(false);
-  const [formdata, setFormdata] = useState({
-    first_name: '',
-    last_name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-  const [error, setError] = useState(false);
-  const [message, setMessage] = useState('');
+  // const [loading, setLoading] = useState(false);
+  // const [formdata, setFormdata] = useState({
+  //   first_name: '',
+  //   last_name: '',
+  //   email: '',
+  //   phone: '',
+  //   message: '',
+  // });
+  // const [error, setError] = useState(false);
+  // const [message, setMessage] = useState('');
 
-  const submitHandler = async (event) => {
-    event.preventDefault();
-    if (!formdata.first_name) {
-      setError(true);
-      setMessage('First Name is required');
-    } else if (!formdata.last_name) {
-      setError(true);
-      setMessage('Last Name is required');
-    } else if (!formdata.email) {
-      setError(true);
-      setMessage('Email is required');
-    } else if (!formdata.phone) {
-      setError(true);
-      setMessage('Phone is required');
-    } else if (!formdata.message) {
-      setError(true);
-      setMessage('Message is required');
-    } else {
-      try {
-        setLoading(true);
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/message`, formdata);
-        setError(false);
-        setMessage('You message has been sent!!!');
-        setFormdata({
-          first_name: '',
-          last_name: '',
-          email: '',
-          phone: '',
-          message: '',
-        });
-        setLoading(false);
-      } catch (error) {
-        setError(true);
-        setMessage('Something Wrong');
-        setLoading(false);
-      }
-    }
-  };
-  const handleChange = (event) => {
-    setFormdata({
-      ...formdata,
-      [event.currentTarget.name]: event.currentTarget.value,
-    });
-  };
+  // const submitHandler = async (event) => {
+  //   event.preventDefault();
+  //   if (!formdata.first_name) {
+  //     setError(true);
+  //     setMessage('First Name is required');
+  //   } else if (!formdata.last_name) {
+  //     setError(true);
+  //     setMessage('Last Name is required');
+  //   } else if (!formdata.email) {
+  //     setError(true);
+  //     setMessage('Email is required');
+  //   } else if (!formdata.phone) {
+  //     setError(true);
+  //     setMessage('Phone is required');
+  //   } else if (!formdata.message) {
+  //     setError(true);
+  //     setMessage('Message is required');
+  //   } else {
+  //     try {
+  //       setLoading(true);
+  //       await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/message`, formdata);
+  //       setError(false);
+  //       setMessage('You message has been sent!!!');
+  //       setFormdata({
+  //         first_name: '',
+  //         last_name: '',
+  //         email: '',
+  //         phone: '',
+  //         message: '',
+  //       });
+  //       setLoading(false);
+  //     } catch (error) {
+  //       setError(true);
+  //       setMessage('Something Wrong');
+  //       setLoading(false);
+  //     }
+  //   }
+  // };
+  // const handleChange = (event) => {
+  //   setFormdata({
+  //     ...formdata,
+  //     [event.currentTarget.name]: event.currentTarget.value,
+  //   });
+  // };
   const numberFormatter = (number) => {
     const phnNumber = number.substring(1);
     const whatsapp = `https://api.whatsapp.com/send?phone=62${phnNumber}&text=Hai!`;
     return whatsapp;
   };
 
-  const handleAlerts = () => {
-    if (error && message) {
-      return <div className="alert alert-danger mt-4">{message}</div>;
-    } else if (!error && message) {
-      return <div className="alert alert-success mt-4">{message}</div>;
-    } else {
-      return null;
-    }
-  };
+  // const handleAlerts = () => {
+  //   if (error && message) {
+  //     return <div className="alert alert-danger mt-4">{message}</div>;
+  //   } else if (!error && message) {
+  //     return <div className="alert alert-success mt-4">{message}</div>;
+  //   } else {
+  //     return null;
+  //   }
+  // };
 
   return (
     <Layout>
@@ -103,7 +104,7 @@ function Contact({ dataProfile }) {
         <div className="container">
           <Sectiontitle title="Contact Me" />
           <div className="row">
-            <div className="col-lg-6">
+            {/* <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
                 <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
@@ -171,7 +172,7 @@ function Contact({ dataProfile }) {
                 </form>
                 {handleAlerts()}
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-6">
               <div className="mi-contact-info">
                 <div className="mi-contact-infoblock">
@@ -234,7 +235,8 @@ function Contact({ dataProfile }) {
 }
 
 export async function getServerSideProps() {
-  const { data: dataProfile } = await baseAxios.get('profile');
+  // const { data: dataProfile } = await baseAxios.get('profile');
+  const dataProfile = require('../data/profile.json');
 
   return { props: { dataProfile: dataProfile } };
 }

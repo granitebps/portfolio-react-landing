@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": 47,
+      "company": "NOBI",
+      "position": "Full Stack Engineer",
+      "start_date": "2022-01-23T17:00:00.000Z",
+      "end_date": null,
+      "current_job": true,
+      "created_at": "2022-01-30T08:50:26.000000Z",
+      "updated_at": "2022-01-30T08:56:32.000000Z",
+      "desc": "Develop multiple NOBI services for our users and our internal team"
+    },
+    {
+      "id": 7,
+      "company": "Titik Pintar",
+      "position": "Full Stack Developer",
+      "start_date": "2020-10-11T17:00:00.000Z",
+      "end_date": "2022-01-13T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "2020-10-09T19:57:23.000000Z",
+      "updated_at": "2022-01-30T08:55:10.000000Z",
+      "desc": "- Develop Titik Pintar API that is being used in our mobile application, internal application, and other application.\n- Develop Titik Pintar Admin Panel for our internal team.\n- Develop Sahabat Pintar (https://sahabatpintar.id), both backend and frontend, for public use. That is a website for teachers, designers, and animators to contribute to our learning application\n- Develop Titik Pintar Account Login. That is a website for parents to monitor their children's progress in our application\n- Develop some features like multiplayer, live class, automation, and others for both our users and our internal team"
+    },
+    {
+      "id": 2,
+      "company": "PT Wamplo Satu Interteknologi",
+      "position": "Junior Software Engineer",
+      "start_date": "2019-06-09T17:00:00.000Z",
+      "end_date": "2020-10-08T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "-000001-11-29T16:52:48.000000Z",
+      "updated_at": "2020-10-09T18:42:45.000000Z",
+      "desc": "This is my first job after I graduate. This is a software house company. I do a lot of Laravel work here. Some apps that I build or develop are BMM, BLK, an app for a church, Datapandi, my company website, an app for one of a hospital in Jakarta, and many more. Some of this app already finished and others still developing."
+    },
+    {
+      "id": 1,
+      "company": "PT Indonesia Comnets Plus (ICON+)",
+      "position": "Internship",
+      "start_date": "2019-01-20T17:00:00.000Z",
+      "end_date": "2019-04-25T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "-000001-11-29T16:52:48.000000Z",
+      "updated_at": "2020-09-19T02:16:47.000000Z",
+      "desc": "This was my internship at my college. In my internship, I do Quality Assurance, developed an app, and make an app. An app that I QA is an app called Virtual Cubicle. This app is for a company called PT PLN Enjiniring (PT. Prima Layanan Nasional Enjiniring). I also develop an app called BPP. This app is for my internal company. An last an app that I make is an app called SILISA. This is a prototype app for Kementerian Energi dan Sumber Daya Mineral Republik Indonesia."
+    }
+  ]
+}

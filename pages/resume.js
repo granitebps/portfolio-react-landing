@@ -6,7 +6,7 @@ import Smalltitle from '../components/Smalltitle';
 import Layout from '../components/Layout';
 import Progress from '../components/Progress';
 import { ResumeEducation, ResumeExperience } from '../components/Resume';
-import { baseAxios } from '../utils/useAxios';
+// import { baseAxios } from '../utils/useAxios';
 import Certification from '../components/Certification';
 
 function resume({ dataEducation, dataExperience, dataSkill, dataCertification }) {
@@ -80,10 +80,14 @@ function resume({ dataEducation, dataExperience, dataSkill, dataCertification })
 }
 
 export async function getServerSideProps() {
-  const { data: dataSkill } = await baseAxios.get('skill');
-  const { data: dataExperience } = await baseAxios.get('experience');
-  const { data: dataEducation } = await baseAxios.get('education');
-  const { data: dataCertification } = await baseAxios.get('certification');
+  // const { data: dataSkill } = await baseAxios.get('skill');
+  // const { data: dataExperience } = await baseAxios.get('experience');
+  // const { data: dataEducation } = await baseAxios.get('education');
+  // const { data: dataCertification } = await baseAxios.get('certification');
+  const dataSkill = require('../data/skill.json');
+  const dataExperience = require('../data/experience.json');
+  const dataEducation = require('../data/education.json');
+  const dataCertification = require('../data/certification.json');
 
   return {
     props: {

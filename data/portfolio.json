@@ -1,0 +1,662 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": 26,
+      "name": "Nomads Travel Website",
+      "desc": "This Nomads Travel Website is a website that I create from Full-Stack Web Developer class from BuildWith Angga website. This website uses Laravel, a PHP Framework. This website also uses Midtrans, a payment gateway from Indonesia. For mail service, this website uses Mailgun. I will update this website regularly until it meets my needs and desires.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/nomads-travel-website/1604832203_thumbnail-2b9fcb7612dec15dd24ee04546f83464.jpg",
+      "type": 1,
+      "url": "https://nomads.granitebps.com",
+      "created_at": "2020-11-08T10:43:28.000000Z",
+      "updated_at": "2020-11-08T14:28:33.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 136,
+          "portfolio_id": 26,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/nomads-travel-website/1604832208_06c2be2fd01baf1760240e084eb99f70.jpg",
+          "created_at": "2020-11-08T10:43:32.000000Z",
+          "updated_at": "2020-11-08T10:43:32.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 137,
+          "portfolio_id": 26,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/nomads-travel-website/1604832212_1ee812ea95fd5ac443fb00bb934a306f.jpg",
+          "created_at": "2020-11-08T10:43:37.000000Z",
+          "updated_at": "2020-11-08T10:43:37.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 138,
+          "portfolio_id": 26,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/nomads-travel-website/1604832217_8d2be61d0cb44a0f8a1d14e695ee0a8d.jpg",
+          "created_at": "2020-11-08T10:43:41.000000Z",
+          "updated_at": "2020-11-08T10:43:41.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 139,
+          "portfolio_id": 26,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/nomads-travel-website/1604832250_4e09dcc15df52ab58c021e1c73359690.jpg",
+          "created_at": "2020-11-08T10:44:15.000000Z",
+          "updated_at": "2020-11-08T10:44:15.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "website.id",
+      "desc": "This is an app that I build for my task at PT Wamplo Satu Interteknologi. This is a website builder. I develop some of the functionality of websiteid. I develop payment service, subscription service, email service, user verification, and web development in general. But I don't develop the builder functionality.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279398_thumbnail-411fbacb4c3cfebe8c7daf08490db503.jpg",
+      "type": 2,
+      "url": "https://website.id",
+      "created_at": "2020-10-09T21:36:43.000000Z",
+      "updated_at": "2020-10-09T21:36:43.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 131,
+          "portfolio_id": 25,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279403_0e530d9daf6ceba80f6cc55ce9263403.jpg",
+          "created_at": "2020-10-09T21:36:47.000000Z",
+          "updated_at": "2020-10-09T21:36:47.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 132,
+          "portfolio_id": 25,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279407_c5df02be0c106e76786cb6a3aa1536f6.jpg",
+          "created_at": "2020-10-09T21:36:51.000000Z",
+          "updated_at": "2020-10-09T21:36:51.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 133,
+          "portfolio_id": 25,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279411_8d2bf94a4383b343a762cfb426ef3cf9.jpg",
+          "created_at": "2020-10-09T21:36:55.000000Z",
+          "updated_at": "2020-10-09T21:36:55.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 134,
+          "portfolio_id": 25,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279415_658890b4725de5ee75a72975aeaae6b9.jpg",
+          "created_at": "2020-10-09T21:36:59.000000Z",
+          "updated_at": "2020-10-09T21:36:59.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 135,
+          "portfolio_id": 25,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/websiteid/1602279419_93730bc4ff574cd2e42cca00c1ee8e01.jpg",
+          "created_at": "2020-10-09T21:37:03.000000Z",
+          "updated_at": "2020-10-09T21:37:03.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "RS Jakarta Mobile",
+      "desc": "This is an app that I build for my task at PT Wamplo Satu Interteknologi. This is a mobile app for RS Jakarta patient that want to register as RS Jakarta user or register for treatment. This application is only available in android. This is like a dashboard for RS Jakarta patient in a mobile",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-mobile/1600407288_thumbnail-screenshot-20200918-122314.png",
+      "type": 2,
+      "url": null,
+      "created_at": "2020-09-18T05:34:49.000000Z",
+      "updated_at": "2020-10-09T21:13:10.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 127,
+          "portfolio_id": 24,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-mobile/1600407289_screenshot-20200918-122333.png",
+          "created_at": "2020-09-18T05:34:49.000000Z",
+          "updated_at": "2020-09-18T05:34:49.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 128,
+          "portfolio_id": 24,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-mobile/1600407289_screenshot-20200918-122543.png",
+          "created_at": "2020-09-18T05:34:49.000000Z",
+          "updated_at": "2020-09-18T05:34:49.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 129,
+          "portfolio_id": 24,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-mobile/1600407289_screenshot-20200918-122623.png",
+          "created_at": "2020-09-18T05:34:49.000000Z",
+          "updated_at": "2020-09-18T05:34:49.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 130,
+          "portfolio_id": 24,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-mobile/1600407289_screenshot-20200918-122746.png",
+          "created_at": "2020-09-18T05:34:49.000000Z",
+          "updated_at": "2020-09-18T05:34:49.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "RS Jakarta Queue System",
+      "desc": "This is an app that I build for my task at PT Wamplo Satu Interteknologi. This is a dashboard for RS Jakarta staff to process patient that has been registered for treatment. This is also a queuing system for RS Jakarta",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-queue-system/1600406174_thumbnail-caller.PNG",
+      "type": 2,
+      "url": null,
+      "created_at": "2020-09-18T05:16:15.000000Z",
+      "updated_at": "2020-10-09T21:13:19.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 124,
+          "portfolio_id": 23,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-queue-system/1600406175_display.PNG",
+          "created_at": "2020-09-18T05:16:15.000000Z",
+          "updated_at": "2020-09-18T05:16:15.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 125,
+          "portfolio_id": 23,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-queue-system/1600406175_login.PNG",
+          "created_at": "2020-09-18T05:16:15.000000Z",
+          "updated_at": "2020-09-18T05:16:15.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 126,
+          "portfolio_id": 23,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/rs-jakarta-queue-system/1600406175_queue.PNG",
+          "created_at": "2020-09-18T05:16:15.000000Z",
+          "updated_at": "2020-09-18T05:16:15.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "React.js To Do List App",
+      "desc": "This is my first application using React.js. This is a simple to-do list application. This application has the functionality to Create, read, update, and delete a to-do list. This is a pure react.js application. No backend, and for the data, I save it in localStorage.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/reactjs-to-do-list-app/1600077387_thumbnail-2.PNG",
+      "type": 1,
+      "url": "https://elegant-ardinghelli-52f971.netlify.app/",
+      "created_at": "2020-09-14T09:56:27.000000Z",
+      "updated_at": "2020-09-14T09:56:27.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 121,
+          "portfolio_id": 22,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/reactjs-to-do-list-app/1600077388_1.PNG",
+          "created_at": "2020-09-14T09:56:28.000000Z",
+          "updated_at": "2020-09-14T09:56:28.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 122,
+          "portfolio_id": 22,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/reactjs-to-do-list-app/1600077388_2.PNG",
+          "created_at": "2020-09-14T09:56:28.000000Z",
+          "updated_at": "2020-09-14T09:56:28.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 123,
+          "portfolio_id": 22,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/reactjs-to-do-list-app/1600077388_3.PNG",
+          "created_at": "2020-09-14T09:56:28.000000Z",
+          "updated_at": "2020-09-14T09:56:28.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "BLK",
+      "desc": "BLK is an app that I build for my task at PT Wamplo Satu Interteknologi. This application builds with Laravel a PHP Framework. BLK stands for Balai Latihan Kerja. This is a dashboard for BLK. BLK is a place that trains people who want to work overseas.  In this app, BLK will manage their places, such as training, presence, participants, instructor, etc. This app will also be connected to other APJATI apps.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382209_thumbnail-1599136637-thumbnail-blk6.PNG",
+      "type": 2,
+      "url": "https://blk.spsk.id",
+      "created_at": "2020-09-03T12:37:17.000000Z",
+      "updated_at": "2020-10-09T21:13:35.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 81,
+          "portfolio_id": 21,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382210_1599334191-blk1.PNG",
+          "created_at": "2020-09-06T08:50:10.000000Z",
+          "updated_at": "2020-09-06T08:50:10.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 82,
+          "portfolio_id": 21,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382210_1599334191-blk2.PNG",
+          "created_at": "2020-09-06T08:50:10.000000Z",
+          "updated_at": "2020-09-06T08:50:10.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 83,
+          "portfolio_id": 21,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382210_1599334192-blk3.PNG",
+          "created_at": "2020-09-06T08:50:10.000000Z",
+          "updated_at": "2020-09-06T08:50:10.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 84,
+          "portfolio_id": 21,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382210_1599334192-blk4.PNG",
+          "created_at": "2020-09-06T08:50:10.000000Z",
+          "updated_at": "2020-09-06T08:50:10.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 85,
+          "portfolio_id": 21,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/blk/1599382210_1599334192-blk5.PNG",
+          "created_at": "2020-09-06T08:50:10.000000Z",
+          "updated_at": "2020-09-06T08:50:10.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "SUNGRAK",
+      "desc": "SUNGRAK is an app that I build for my task at PT Wamplo Satu Interteknologi. This application builds with Laravel a PHP Framework. This app is for a church. This app is like a database for the church. It contains all of the users or people that come to the church. It also tracks the donation of the people. This app also has an email sender and SMS sender. Basically this app is dashboard management for the church.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sungrak/1599382882_thumbnail-1599135930-thumbnail-sungrak1.PNG",
+      "type": 2,
+      "url": "http://sungrak.id",
+      "created_at": "2020-09-03T12:25:30.000000Z",
+      "updated_at": "2020-10-09T21:13:52.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 86,
+          "portfolio_id": 20,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sungrak/1599382882_1599135930-sungrak3.PNG",
+          "created_at": "2020-09-06T09:01:22.000000Z",
+          "updated_at": "2020-09-06T09:01:22.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 87,
+          "portfolio_id": 20,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sungrak/1599382882_1599135930-sungrak4.PNG",
+          "created_at": "2020-09-06T09:01:22.000000Z",
+          "updated_at": "2020-09-06T09:01:22.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 88,
+          "portfolio_id": 20,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sungrak/1599382882_1599135930-sungrak5.PNG",
+          "created_at": "2020-09-06T09:01:22.000000Z",
+          "updated_at": "2020-09-06T09:01:22.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 89,
+          "portfolio_id": 20,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sungrak/1599382882_1599135930-sungrak6.PNG",
+          "created_at": "2020-09-06T09:01:22.000000Z",
+          "updated_at": "2020-09-06T09:01:22.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Sudin Bina Marga Jakarta Barat",
+      "desc": "This is a website that I build for one of the government institutes, Sudin Bina Marga Jakarta Barat, DKI Jakarta. This website builds for them to accept a complaint from a citizen. The citizen must be registered first before sending a complaint. Admin can view complaints from the citizen. This website also provide information about public service. And there is a menu to see the institute activity. I build the entire website.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sudin-bina-marga-jakarta-barat/1599382921_thumbnail-thumbnail-pengaduan.png",
+      "type": 2,
+      "url": "https://sdbmjakartabarat.or.id/",
+      "created_at": "2020-03-24T20:51:18.000000Z",
+      "updated_at": "2020-09-06T09:02:01.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 90,
+          "portfolio_id": 19,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sudin-bina-marga-jakarta-barat/1599382921_admin-berita.png",
+          "created_at": "2020-09-06T09:02:01.000000Z",
+          "updated_at": "2020-09-06T09:02:01.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 91,
+          "portfolio_id": 19,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sudin-bina-marga-jakarta-barat/1599382921_admin-pengaduan.png",
+          "created_at": "2020-09-06T09:02:01.000000Z",
+          "updated_at": "2020-09-06T09:02:01.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 92,
+          "portfolio_id": 19,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sudin-bina-marga-jakarta-barat/1599382921_home1.png",
+          "created_at": "2020-09-06T09:02:02.000000Z",
+          "updated_at": "2020-09-06T09:02:02.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 93,
+          "portfolio_id": 19,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sudin-bina-marga-jakarta-barat/1599382922_pelayanan-publik1.png",
+          "created_at": "2020-09-06T09:02:02.000000Z",
+          "updated_at": "2020-09-06T09:02:02.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Alumni UNJ",
+      "desc": "This a website that builds for Alumni Universitas Negeri Jakarta. This is a website that I build with my friend. My friend builds the template and I sync the template with the back end. I also tweak the template for working properly. This like a blog website that fills with Alumni UNJ content. There is a database for UNJ alumni. I do all the back end stuff.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/alumni-unj/1599382963_thumbnail-thumbnail-rsz-1welcome.png",
+      "type": 2,
+      "url": "https://alumniunj.com",
+      "created_at": "2020-01-29T02:26:23.000000Z",
+      "updated_at": "2020-09-06T09:02:43.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 94,
+          "portfolio_id": 18,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/alumni-unj/1599382964_ika-unj-daftar-post-kabar-alumni.png",
+          "created_at": "2020-09-06T09:02:44.000000Z",
+          "updated_at": "2020-09-06T09:02:44.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 95,
+          "portfolio_id": 18,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/alumni-unj/1599382964_ika-unj-dashboard.png",
+          "created_at": "2020-09-06T09:02:44.000000Z",
+          "updated_at": "2020-09-06T09:02:44.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 96,
+          "portfolio_id": 18,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/alumni-unj/1599382964_rsz-1ikatan-alumni-universitas-negeri-jakarta.png",
+          "created_at": "2020-09-06T09:02:44.000000Z",
+          "updated_at": "2020-09-06T09:02:44.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Book Manager API",
+      "desc": "This is my first application using Go Language. This is a simple API for Book Management. This application have all functionality of CRUD (Create, Read, Update, Delete). This is not full web application, but an API.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/book-manager-api/1599383006_thumbnail-thumbnail-home.png",
+      "type": 1,
+      "url": "https://github.com/granitebps/golang-restapi",
+      "created_at": "2019-09-15T14:57:54.000000Z",
+      "updated_at": "2020-09-06T09:03:26.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 100,
+          "portfolio_id": 16,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/book-manager-api/1599383006_create.png",
+          "created_at": "2020-09-06T09:03:26.000000Z",
+          "updated_at": "2020-09-06T09:03:26.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 101,
+          "portfolio_id": 16,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/book-manager-api/1599383006_home.png",
+          "created_at": "2020-09-06T09:03:27.000000Z",
+          "updated_at": "2020-09-06T09:03:27.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 102,
+          "portfolio_id": 16,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/book-manager-api/1599383007_show.png",
+          "created_at": "2020-09-06T09:03:27.000000Z",
+          "updated_at": "2020-09-06T09:03:27.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "To Do List Application",
+      "desc": "This is my first application build with Node.js, a Javascript server-side framework. This is a simple to-do list application. This application have all functionality of CRUD (Create, Read, Update, Delete).",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/to-do-list-application/1599383031_thumbnail-thumbnail-home-edit.png",
+      "type": 1,
+      "url": "https://github.com/granitebps/ToDoListAppNodeJS",
+      "created_at": "2019-09-15T14:57:19.000000Z",
+      "updated_at": "2020-09-06T09:03:51.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 103,
+          "portfolio_id": 15,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/to-do-list-application/1599383031_completed-edit.png",
+          "created_at": "2020-09-06T09:03:51.000000Z",
+          "updated_at": "2020-09-06T09:03:51.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 104,
+          "portfolio_id": 15,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/to-do-list-application/1599383031_home-edit.png",
+          "created_at": "2020-09-06T09:03:51.000000Z",
+          "updated_at": "2020-09-06T09:03:51.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 105,
+          "portfolio_id": 15,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/to-do-list-application/1599383031_todo-edit.png",
+          "created_at": "2020-09-06T09:03:51.000000Z",
+          "updated_at": "2020-09-06T09:03:51.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sign Language Translator Application",
+      "desc": "This is an application that I build with Node.js, a Javascript server-side framework. This application I build for the final project of my bachelor's degree. This application is to translate sign language and the output is audio and text. The translating process use Backpropagation methods. And I use Brain.js for the implementation of the methods.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sign-language-translator-application/1599383055_thumbnail-thumbnail-halaman-utama.png",
+      "type": 1,
+      "url": "https://github.com/granitebps/skripsi",
+      "created_at": "2019-09-15T14:56:34.000000Z",
+      "updated_at": "2020-09-06T09:04:15.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 106,
+          "portfolio_id": 14,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sign-language-translator-application/1599383056_rsz-halaman-tambah-data.png",
+          "created_at": "2020-09-06T09:04:16.000000Z",
+          "updated_at": "2020-09-06T09:04:16.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 107,
+          "portfolio_id": 14,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sign-language-translator-application/1599383056_rsz-halaman-uji.png",
+          "created_at": "2020-09-06T09:04:16.000000Z",
+          "updated_at": "2020-09-06T09:04:16.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 108,
+          "portfolio_id": 14,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/sign-language-translator-application/1599383056_rsz-hasil-pengujian.png",
+          "created_at": "2020-09-06T09:04:16.000000Z",
+          "updated_at": "2020-09-06T09:04:16.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Personal Blog",
+      "desc": "This is my first project to build a website using Laravel a PHP Framework. This is like another blog. Have all functionality of blog, like posts, categories, tag, etc. I use a template that I get from the Internet, both the user template and the admin template.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/personal-blog/1599383080_thumbnail-thumbnail-dashboard.PNG",
+      "type": 1,
+      "url": "https://github.com/granitebps/BlogLaravel",
+      "created_at": "2019-09-15T14:55:48.000000Z",
+      "updated_at": "2020-09-06T09:04:40.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 109,
+          "portfolio_id": 13,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/personal-blog/1599383081_dashboard.PNG",
+          "created_at": "2020-09-06T09:04:41.000000Z",
+          "updated_at": "2020-09-06T09:04:41.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 110,
+          "portfolio_id": 13,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/personal-blog/1599383081_menu.PNG",
+          "created_at": "2020-09-06T09:04:41.000000Z",
+          "updated_at": "2020-09-06T09:04:41.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 111,
+          "portfolio_id": 13,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/personal-blog/1599383081_rsz-tampilan.png",
+          "created_at": "2020-09-06T09:04:41.000000Z",
+          "updated_at": "2020-09-06T09:04:41.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "BMM",
+      "desc": "BBM is a project that I build for my task at PT Wamplo Satu Interteknologi. This application builds with Laravel a PHP Framework. This application to register some people if they want to work overseas. This application has payment gateway and can export some excel data. This application have multiple user roles.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/bmm/1599383096_thumbnail-thumbnail-bmm-login.png",
+      "type": 2,
+      "url": null,
+      "created_at": "2019-09-15T14:55:10.000000Z",
+      "updated_at": "2020-10-09T21:14:14.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 112,
+          "portfolio_id": 12,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/bmm/1599383096_bmm.png",
+          "created_at": "2020-09-06T09:04:56.000000Z",
+          "updated_at": "2020-09-06T09:04:56.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 113,
+          "portfolio_id": 12,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/bmm/1599383096_bmm-login.png",
+          "created_at": "2020-09-06T09:04:56.000000Z",
+          "updated_at": "2020-09-06T09:04:56.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "SIMARUK",
+      "desc": "SIMARUK is an abbreviation of Sistem Manajemen Ruang Kelas. This application builds from scratch with Laravel a PHP Framework. This application is a personal project that I build for the task of a course in my college. This application means to register if an event wants to borrow a room. One event with another event can not borrow a room at the same time. Admin can approve or not when an event borrow a room. For the demo purpose, use this credential to log in. Email : admin@gmail.com Password : 12345678",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/simaruk/1599383119_thumbnail-thumbnail-halaman-utama.png",
+      "type": 1,
+      "url": "https://granitebps.000webhostapp.com/",
+      "created_at": "2019-09-15T14:54:31.000000Z",
+      "updated_at": "2020-09-06T09:05:19.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 114,
+          "portfolio_id": 11,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/simaruk/1599383119_halaman-utama.png",
+          "created_at": "2020-09-06T09:05:19.000000Z",
+          "updated_at": "2020-09-06T09:05:19.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 115,
+          "portfolio_id": 11,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/simaruk/1599383119_simaruk-buat-peminjaman.png",
+          "created_at": "2020-09-06T09:05:19.000000Z",
+          "updated_at": "2020-09-06T09:05:19.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 116,
+          "portfolio_id": 11,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/simaruk/1599383119_simaruk-detail.png",
+          "created_at": "2020-09-06T09:05:19.000000Z",
+          "updated_at": "2020-09-06T09:05:19.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 117,
+          "portfolio_id": 11,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/simaruk/1599383119_simaruk-home.png",
+          "created_at": "2020-09-06T09:05:20.000000Z",
+          "updated_at": "2020-09-06T09:05:20.000000Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "SILISA",
+      "desc": "SILISA is an abbreviation of Sistem Monitoring Listrik Desa. This is a project that I build when I at my internship in PT Indonesia Comnets Plus (ICON+). I build this application from scratch with Laravel a PHP Framework. This application means to monitor all village in Indonesia. And then admin can add a village. Admin can also add an electricity status of a village. Admin can also add data by importing an excel file.",
+      "thumbnail": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/silisa/1599383136_thumbnail-thumbnail-1.PNG",
+      "type": 2,
+      "url": "https://github.com/granitebps/silisa",
+      "created_at": "2019-09-15T14:52:27.000000Z",
+      "updated_at": "2020-09-06T09:05:36.000000Z",
+      "deleted_at": null,
+      "pic": [
+        {
+          "id": 118,
+          "portfolio_id": 10,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/silisa/1599383136_1.PNG",
+          "created_at": "2020-09-06T09:05:37.000000Z",
+          "updated_at": "2020-09-06T09:05:37.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 119,
+          "portfolio_id": 10,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/silisa/1599383137_2.PNG",
+          "created_at": "2020-09-06T09:05:37.000000Z",
+          "updated_at": "2020-09-06T09:05:37.000000Z",
+          "deleted_at": null
+        },
+        {
+          "id": 120,
+          "portfolio_id": 10,
+          "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/portfolio/silisa/1599383137_3.PNG",
+          "created_at": "2020-09-06T09:05:37.000000Z",
+          "updated_at": "2020-09-06T09:05:37.000000Z",
+          "deleted_at": null
+        }
+      ]
+    }
+  ]
+}
