@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Pagination from '../components/Pagination';
 import PortfoliosView from '../components/PortfoliosView';
 import Head from 'next/head';
-// import { baseAxios } from '../utils/useAxios';
+import { baseAxios } from '../utils/useAxios';
 
 function portfolio({ dataPortfolio }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,8 +60,7 @@ function portfolio({ dataPortfolio }) {
 }
 
 export async function getServerSideProps() {
-  // const { data: dataPortfolio } = await baseAxios.get('portfolio');
-  const dataPortfolio = require('../data/portfolio.json');
+  const { data: dataPortfolio } = await baseAxios.get('portfolio');
 
   return {
     props: {

@@ -5,7 +5,7 @@ import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 import BlogsView from '../components/BlogsView';
 import Pagination from '../components/Pagination';
-// import { baseAxios } from '../utils/useAxios';
+import { baseAxios } from '../utils/useAxios';
 
 function blogs({ dataBlog }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,8 +61,7 @@ function blogs({ dataBlog }) {
 }
 
 export async function getServerSideProps() {
-  // const { data: dataBlog } = await baseAxios.get('blog');
-  const dataBlog = require('../data/blog.json');
+  const { data: dataBlog } = await baseAxios.get('blog');
 
   return {
     props: {

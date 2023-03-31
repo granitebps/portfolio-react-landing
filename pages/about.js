@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import Service from '../components/Service';
 import Head from 'next/head';
 import Technology from '../components/Technology';
-// import { baseAxios } from '../utils/useAxios';
+import { baseAxios } from '../utils/useAxios';
 
 function about({ dataProfile, dataService, dataTechnology }) {
   const [toggler, setToggler] = useState(false);
@@ -131,12 +131,9 @@ function about({ dataProfile, dataService, dataTechnology }) {
 }
 
 export async function getServerSideProps() {
-  // const { data: dataProfile } = await baseAxios.get('profile');
-  // const { data: dataService } = await baseAxios.get('service');
-  // const { data: dataTechnology } = await baseAxios.get('technology');
-  const dataProfile = require('../data/profile.json');
-  const dataService = require('../data/service.json');
-  const dataTechnology = require('../data/technology.json');
+  const { data: dataProfile } = await baseAxios.get('profile');
+  const { data: dataService } = await baseAxios.get('service');
+  const { data: dataTechnology } = await baseAxios.get('technology');
 
   return {
     props: {
