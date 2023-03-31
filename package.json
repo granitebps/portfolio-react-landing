@@ -10,7 +10,6 @@
     "fslightbox-react": "^1.6.2",
     "moment": "^2.29.4",
     "next": "^11.1.4",
-    "node-sass": "^4.14.1",
     "nprogress": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,6 +22,7 @@
     "react-particles-js": "^2.7.0",
     "react-slick": "^0.25.2",
     "rehype-raw": "^6.1.1",
+    "sass": "^1.60.0",
     "shave": "^2.5.10",
     "slick-carousel": "^1.8.1"
   },
