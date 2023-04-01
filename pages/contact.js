@@ -230,6 +230,9 @@ function Contact({ dataProfile }) {
                     <p>
                       <a href="https://affiliate.notion.so/cakzfw7mz6tq">Notion</a>
                     </p>
+                    <p>
+                      <a href="https://r.honeygain.me/GRANI9B6CD">Honeygain</a>
+                    </p>
                   </div>
                 </div>
               </div>
