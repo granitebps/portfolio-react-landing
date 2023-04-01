@@ -222,6 +222,14 @@ function Contact({ dataProfile }) {
                     <p>
                       <a href="https://m.do.co/c/c75b7fdabb0c">Digital Ocean</a>
                     </p>
+                    <p>
+                      <a href="https://www.linode.com/lp/refer/?r=3bf73b0229dc677409075edfd614f14ed7e6daf1">
+                        Linode
+                      </a>
+                    </p>
+                    <p>
+                      <a href="https://affiliate.notion.so/cakzfw7mz6tq">Notion</a>
+                    </p>
                   </div>
                 </div>
               </div>
