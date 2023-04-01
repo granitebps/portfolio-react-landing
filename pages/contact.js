@@ -233,6 +233,9 @@ function Contact({ dataProfile }) {
                     <p>
                       <a href="https://r.honeygain.me/GRANI9B6CD">Honeygain</a>
                     </p>
+                    <p>
+                      <a href="https://app.warp.dev/referral/2VQEE9">Warp</a>
+                    </p>
                   </div>
                 </div>
               </div>
