@@ -11,7 +11,7 @@
       "current_job": true,
       "created_at": "2022-01-30T08:50:26.000000Z",
       "updated_at": "2022-01-30T08:56:32.000000Z",
-      "desc": "Develop multiple NOBI services for our users and our internal team"
+      "desc": "- Develop some APIs for NOBI applications using Laravel and Nodejs\n- Migrate some of NOBI monolith API to a micro-services\n- Migrate some of NOBI API from Laravel to Golang\n- Develop NOBI internal application using Vue"
     },
     {
       "id": 7,
@@ -33,7 +33,7 @@
       "current_job": false,
       "created_at": "-000001-11-29T16:52:48.000000Z",
       "updated_at": "2020-10-09T18:42:45.000000Z",
-      "desc": "This is my first job after I graduate. This is a software house company. I do a lot of Laravel work here. Some apps that I build or develop are BMM, BLK, an app for a church, Datapandi, my company website, an app for one of a hospital in Jakarta, and many more. Some of this app already finished and others still developing."
+      "desc": "- Develop web application for PT Wamplo Satu Interteknologi client using Laravel\n- Develop mobile application for PT Wamplo Satu Interteknologi client using React Native"
     },
     {
       "id": 1,
@@ -44,7 +44,7 @@
       "current_job": false,
       "created_at": "-000001-11-29T16:52:48.000000Z",
       "updated_at": "2020-09-19T02:16:47.000000Z",
-      "desc": "This was my internship at my college. In my internship, I do Quality Assurance, developed an app, and make an app. An app that I QA is an app called Virtual Cubicle. This app is for a company called PT PLN Enjiniring (PT. Prima Layanan Nasional Enjiniring). I also develop an app called BPP. This app is for my internal company. An last an app that I make is an app called SILISA. This is a prototype app for Kementerian Energi dan Sumber Daya Mineral Republik Indonesia."
+      "desc": "- Test application for ICON+ client\n- Develop applications for ICON+ clients using Angular"
     }
   ]
 }

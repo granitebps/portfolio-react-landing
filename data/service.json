@@ -22,9 +22,17 @@
       "id": 3,
       "name": "React.js & React Native",
       "icon": "react",
-      "desc": "I can build a website using React.js for the front end, and build a mobile app using React Native.",
+      "desc": "I can build a website using React.js for the front end, and build a mobile app using React Native. If you are interesting, please contact me.",
       "created_at": "2020-05-31T23:28:05.000000Z",
       "updated_at": "2020-06-05T04:51:33.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "Golang",
+      "icon": "go",
+      "desc": "I can build an API using Golang with Gin or Fiber. If you are interesting, please contact me.",
+      "created_at": "2023-11-29T12:00:00.000000Z",
+      "updated_at": "2023-11-29T12:00:00.000000Z"
     }
   ]
 }

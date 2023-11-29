@@ -43,6 +43,13 @@
       "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379807_react-native.png",
       "created_at": "2020-04-20T13:17:50.000000Z",
       "updated_at": "2020-09-06T08:10:07.000000Z"
+    },
+    {
+      "id": 14,
+      "name": "Golang",
+      "pic": "https://jtgwrmdhepmhhfkqrjfl.supabase.co/storage/v1/object/public/gbps/logo_go.png",
+      "created_at": "2023-11-29T12:00:00.000000Z",
+      "updated_at": "2023-11-29T12:00:00.000000Z"
     }
   ]
 }
