@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
-
-const LineIcon = dynamic(() => import('react-lineicons'), {
-  ssr: false,
-});
 
 function Header() {
   const [navigationToggler, setNavigationToggler] = useState(false);
@@ -18,7 +13,7 @@ function Header() {
   return (
     <nav className={navigationToggler ? 'mi-header is-visible' : 'mi-header'}>
       <button onClick={handleNavigationToggler} className="mi-header-toggler">
-        {!navigationToggler ? <LineIcon name="menu" /> : <LineIcon name="close" />}
+        {!navigationToggler ? <i className="lni lni-menu"></i> : <i className="lni lni-close"></i>}
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">

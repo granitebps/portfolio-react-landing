@@ -7,6 +7,8 @@ const Layout = ({ children }) => {
   return (
     <div className="mi-wrapper">
       <Head>
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133810181-1"></script>
         <script

@@ -1,9 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
-
-const LineIcon = dynamic(() => import('react-lineicons'), {
-  ssr: false,
-});
 
 function Pagination({ itemsPerPage, totalItems, paginate, currentPage, className }) {
   const pageNumbers = [];
@@ -18,7 +13,7 @@ function Pagination({ itemsPerPage, totalItems, paginate, currentPage, className
         {currentPage === 1 ? null : (
           <li>
             <a onClick={(e) => paginate(e, currentPage - 1)} href="!#">
-              <LineIcon name="chevron-left" />
+              <i className="lni lni-chevron-left"></i>
             </a>
           </li>
         )}
@@ -32,7 +27,7 @@ function Pagination({ itemsPerPage, totalItems, paginate, currentPage, className
         {currentPage === pageNumbers[pageNumbers.length - 1] ? null : (
           <li>
             <a onClick={(e) => paginate(e, currentPage + 1)} href="!#">
-              <LineIcon name="chevron-right" />
+              <i className="lni lni-chevron-right"></i>
             </a>
           </li>
         )}
