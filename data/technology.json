@@ -47,7 +47,7 @@
     {
       "id": 14,
       "name": "Golang",
-      "pic": "https://jtgwrmdhepmhhfkqrjfl.supabase.co/storage/v1/object/public/gbps/logo_go.png",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/logo_go.png",
       "created_at": "2023-11-29T12:00:00.000000Z",
       "updated_at": "2023-11-29T12:00:00.000000Z"
     }
