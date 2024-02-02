@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": 47,
+      "company": "NOBI",
+      "position": "Full Stack Engineer",
+      "start_date": "2022-01-23T17:00:00.000Z",
+      "end_date": "2023-12-19T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "2022-01-30T08:50:26.000000Z",
+      "updated_at": "2022-01-30T08:56:32.000000Z",
+      "desc": "- Developed new features and maintained some of NOBI APIs using Laravel and Nodejs.\n- Migrated a portion of NOBI's monolithic API to a microservices architecture.\n- Transferred specific NOBI APIs from Laravel to Golang.\n- Developed new features and maintained internal applications for NOBI utilizing Laravel and Vue.js."
+    },
+    {
+      "id": 7,
+      "company": "Titik Pintar",
+      "position": "Full Stack Developer",
+      "start_date": "2020-10-11T17:00:00.000Z",
+      "end_date": "2022-01-13T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "2020-10-09T19:57:23.000000Z",
+      "updated_at": "2022-01-30T08:55:10.000000Z",
+      "desc": "- Developed new features and maintained Titik Pintar API, integral to our mobile application, internal systems, and other applications using Laravel.\n- Developed new features and maintained Titik Pintar Admin Panel for our internal team using Angular.js.\n- Developed new features and maintained Sahabat Pintar application using Laravel and Angular.js. This platform caters to teachers, designers, and animators, facilitating their contributions to our learning application.\n- Developed new features and maintained Titik Pintar Account Login using Laravel and React.js. This app is a user-friendly website empowering parents to monitor their children's progress within our application.\n- Innovated various features such as multiplayer, live class functionality, automation, and more, benefiting both end-users and the internal team using Node.js."
+    },
+    {
+      "id": 2,
+      "company": "PT Wamplo Satu Interteknologi",
+      "position": "Junior Software Engineer",
+      "start_date": "2019-06-09T17:00:00.000Z",
+      "end_date": "2020-10-08T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "-000001-11-29T16:52:48.000000Z",
+      "updated_at": "2020-10-09T18:42:45.000000Z",
+      "desc": "- Developed new features and maintained web applications for clients of PT Wamplo Satu Interteknologi using Laravel.\n- Developed new features and maintained mobile applications for clients of PT Wamplo Satu Interteknologi using React Native."
+    },
+    {
+      "id": 1,
+      "company": "PT Indonesia Comnets Plus (ICON+)",
+      "position": "Internship",
+      "start_date": "2019-01-20T17:00:00.000Z",
+      "end_date": "2019-04-25T17:00:00.000Z",
+      "current_job": false,
+      "created_at": "-000001-11-29T16:52:48.000000Z",
+      "updated_at": "2020-09-19T02:16:47.000000Z",
+      "desc": "- Conducted thorough testing of applications for ICON+ clients.\n- Contributed to the development of applications tailored to ICON+ clients, utilizing Angular.js."
+    }
+  ]
+}

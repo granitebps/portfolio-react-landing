@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": 6,
+      "name": "Laravel",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379766_laravel.png",
+      "created_at": "2019-09-09T01:31:49.000000Z",
+      "updated_at": "2020-09-06T08:09:26.000000Z"
+    },
+    {
+      "id": 7,
+      "name": "Node.js",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379775_node.png",
+      "created_at": "2019-09-09T01:32:03.000000Z",
+      "updated_at": "2020-09-06T08:09:35.000000Z"
+    },
+    {
+      "id": 9,
+      "name": "MySQL",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379784_mysql.png",
+      "created_at": "2019-09-15T13:53:43.000000Z",
+      "updated_at": "2020-09-06T08:09:44.000000Z"
+    },
+    {
+      "id": 10,
+      "name": "MongoDB",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379792_mongodb.png",
+      "created_at": "2019-09-15T13:55:28.000000Z",
+      "updated_at": "2020-09-06T08:09:52.000000Z"
+    },
+    {
+      "id": 11,
+      "name": "React",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379800_react.png",
+      "created_at": "2019-09-15T13:56:45.000000Z",
+      "updated_at": "2020-09-06T08:10:01.000000Z"
+    },
+    {
+      "id": 13,
+      "name": "React Native",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/1599379807_react-native.png",
+      "created_at": "2020-04-20T13:17:50.000000Z",
+      "updated_at": "2020-09-06T08:10:07.000000Z"
+    },
+    {
+      "id": 14,
+      "name": "Golang",
+      "pic": "https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/tech/logo_go.png",
+      "created_at": "2023-11-29T12:00:00.000000Z",
+      "updated_at": "2023-11-29T12:00:00.000000Z"
+    }
+  ]
+}

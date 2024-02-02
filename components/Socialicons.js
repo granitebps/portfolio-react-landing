@@ -1,46 +1,41 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
-
-const LineIcon = dynamic(() => import('react-lineicons'), {
-  ssr: false,
-});
 
 const Socialicons = ({ social }) => {
   return (
     <ul className="mi-socialicons mi-socialicons-bordered">
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.linkedin}>
-          <LineIcon name="linkedin" />
+          <i className="lni lni-linkedin"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.github}>
-          <LineIcon name="github" />
+          <i className="lni lni-github"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.facebook}>
-          <LineIcon name="facebook" />
+          <i className="lni lni-facebook"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.twitter}>
-          <LineIcon name="twitter" />
+          <i className="lni lni-twitter"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.instagram}>
-          <LineIcon name="instagram" />
+          <i className="lni lni-instagram"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.youtube}>
-          <LineIcon name="youtube" />
+          <i className="lni lni-youtube"></i>
         </a>
       </li>
       <li>
         <a rel="noopener noreferrer" target="_blank" href={social.medium}>
-          <LineIcon name="medium" />
+          <i className="lni lni-medium"></i>
         </a>
       </li>
     </ul>
