@@ -2,6 +2,7 @@
   "name": "granitebps.com-react-landing",
   "version": "1.0.0",
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "axios": "^1.6.7",
     "axios-mock-adapter": "^1.20.0",
     "bootstrap": "^4.6.1",
