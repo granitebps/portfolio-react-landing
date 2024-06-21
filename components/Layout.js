@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import BackgroundLines from '../components/BackgroundLines';
 import Head from 'next/head';
+import Script from 'next/script';
 
 const Layout = ({ children }) => {
   return (
@@ -26,6 +27,12 @@ const Layout = ({ children }) => {
       <BackgroundLines />
       <Header />
       {children}
+      <Script
+        defer
+        async
+        src="https://cloud.umami.is/script.js"
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID}
+      />
     </div>
   );
 };
