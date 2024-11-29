@@ -20,7 +20,7 @@ function Header() {
           <Link href="/">
             <a>
               <img
-                src="https://s3.ap-southeast-1.amazonaws.com/portfolio-granitebps.com/avatar/avatar.jpg"
+                src="https://is3.cloudhost.id/gbps/avatar/avatar.jpg"
                 alt="Granite Bagas"
                 className="img-fluid align-self-center"
               />
