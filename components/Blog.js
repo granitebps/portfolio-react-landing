@@ -9,9 +9,7 @@ function Blog(props) {
     <div className="mi-blog">
       <div className="mi-blog-image">
         <Link href={`blogs/[id]/[slug]`} as={`/blogs/${id}/${slug}`}>
-          <a>
-            <img src={image} alt={title} />
-          </a>
+          <img src={image} alt={title} />
         </Link>
         <div className="mi-blog-date">
           <span className="date">{moment(created_at).format('DD')}</span>
@@ -21,7 +19,7 @@ function Blog(props) {
       <div className="mi-blog-content">
         <h5>
           <Link href={`blogs/[id]/[slug]`} as={`/blogs/${id}/${slug}`}>
-            <a>{title}</a>
+            {title}
           </Link>
         </h5>
       </div>

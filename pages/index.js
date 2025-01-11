@@ -1,45 +1,11 @@
 import React from 'react';
-import Particles from 'react-particles-js';
 import { baseAxios } from '../utils/useAxios';
 import Socialicons from '../components/Socialicons';
 import Layout from '../components/Layout';
+import Particle from '../components/Particle';
 import Head from 'next/head';
 
 const index = ({ data }) => {
-  const paramConfig = {
-    particles: {
-      number: {
-        value: 160,
-        density: {
-          enable: false,
-        },
-      },
-      color: {
-        value: '#ffffff',
-      },
-      opacity: {
-        value: 0.1,
-      },
-      size: {
-        value: 5,
-        random: true,
-        anim: {
-          speed: 4,
-          size_min: 0.3,
-        },
-      },
-      line_linked: {
-        enable: false,
-      },
-      move: {
-        random: true,
-        speed: 1,
-        direction: 'top',
-        out_mode: 'out',
-      },
-    },
-  };
-
   return (
     <Layout data={data.data}>
       <Head>
@@ -62,7 +28,7 @@ const index = ({ data }) => {
       </Head>
 
       <div className="mi-home-area mi-padding-section">
-        <Particles className="mi-home-particle" params={paramConfig} />
+        <Particle />
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-12">

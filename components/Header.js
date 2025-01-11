@@ -18,45 +18,47 @@ function Header() {
       <div className="mi-header-inner">
         <div className="mi-header-image">
           <Link href="/">
-            <a>
-              <img
-                src="https://is3.cloudhost.id/gbps/avatar/avatar.jpg"
-                alt="Granite Bagas"
-                className="img-fluid align-self-center"
-              />
-            </a>
+            <img
+              src="https://is3.cloudhost.id/gbps/avatar/avatar.jpg"
+              alt="Granite Bagas"
+              className="img-fluid align-self-center"
+            />
           </Link>
         </div>
 
         <ul className="mi-header-menu">
           <li>
-            <Link href="/">
-              <a className={router.pathname === '/' ? 'active' : undefined}>Home</a>
+            <Link href="/" className={router.pathname === '/' ? 'active' : undefined}>
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a className={router.pathname === '/about' ? 'active' : undefined}>About</a>
+            <Link href="/about" className={router.pathname === '/about' ? 'active' : undefined}>
+              About
             </Link>
           </li>
           <li>
-            <Link href="/resume">
-              <a className={router.pathname === '/resume' ? 'active' : undefined}>Resume</a>
+            <Link href="/resume" className={router.pathname === '/resume' ? 'active' : undefined}>
+              Resume
             </Link>
           </li>
           <li>
-            <Link href="/portfolios">
-              <a className={router.pathname === '/portfolios' ? 'active' : undefined}>Portfolios</a>
+            <Link
+              href="/portfolios"
+              className={router.pathname === '/portfolios' ? 'active' : undefined}>
+              Portfolios
             </Link>
           </li>
           <li>
-            <Link href="/blogs">
-              <a className={router.pathname.includes('/blogs') ? 'active' : undefined}>Blogs</a>
+            <Link
+              href="/blogs"
+              className={router.pathname.includes('/blogs') ? 'active' : undefined}>
+              Blogs
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a className={router.pathname === '/contact' ? 'active' : undefined}>Contact</a>
+            <Link href="/contact" className={router.pathname === '/contact' ? 'active' : undefined}>
+              Contact
             </Link>
           </li>
         </ul>

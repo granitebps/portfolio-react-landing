@@ -2,22 +2,11 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
-import Disqus from 'disqus-react';
 import Layout from '../../../../components/Layout';
 import Head from 'next/head';
 import { baseAxios } from '../../../../utils/useAxios';
 
 function BlogDetails({ dataBlog }) {
-  const blogId = dataBlog.data.id;
-  const blogFile = dataBlog.data.title;
-
-  const disqusShortname = 'granitebps-2'; //found in your Disqus.com dashboard
-  const disqusConfig = {
-    url: `https://granitebps.site`, //Homepage link of this site.
-    identifier: blogId.toString(),
-    title: blogFile,
-  };
-
   return (
     <Layout>
       <Head>
@@ -48,9 +37,6 @@ function BlogDetails({ dataBlog }) {
             width="30%"
           />
           <ReactMarkdown rehypePlugins={[rehypeRaw]} children={dataBlog.data.body} />
-          <div className="mi-blog-details-comments mt-30">
-            <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-          </div>
         </div>
       </div>
     </Layout>
